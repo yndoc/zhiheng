@@ -1,0 +1,302 @@
+{
+  "version": "1.0.0",
+  "constitution": {
+    "平和质": [
+      { "title": "均衡饮食", "desc": "五谷杂粮、蔬菜水果均衡搭配，每日三餐定时定量", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "五禽戏", "desc": "全面调理，每日15-20分钟，动作舒缓，呼吸自然", "type": "功法", "category": "exercise", "level": "core" }
+    ],
+    "基本平和质": [
+      { "title": "均衡饮食", "desc": "五谷杂粮、蔬菜水果均衡搭配，每日三餐定时定量", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "五禽戏", "desc": "全面调理，每日15-20分钟，动作舒缓，呼吸自然", "type": "功法", "category": "exercise", "level": "core" }
+    ],
+    "气虚质": [
+      { "title": "黄芪炖鸡", "desc": "黄芪10g、鸡肉200g、生姜3片，慢炖1小时，每周2次，补气升阳，改善乏力", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "山药粥", "desc": "鲜山药100g（或干品30g）、大米50g，煮粥作早餐，健脾益气，每日食用", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "八段锦", "desc": "重点练习\"调理脾胃须单举\"、\"双手托天理三焦\"，配合腹式呼吸，每日15分钟", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "艾灸气海、关元", "desc": "气海（脐下1.5寸）、关元（脐下3寸），每穴雀啄灸10分钟，每日1次", "type": "艾灸", "category": "living", "level": "core" }
+    ],
+    "阳虚质": [
+      { "title": "生姜红糖水", "desc": "生姜3片、红糖10g，沸水冲泡，每日晨起一杯，温阳散寒", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "羊肉汤", "desc": "羊肉200g、生姜5片、当归5g，炖汤，每周2次，温补肾阳", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "太极拳", "desc": "温通阳气，每日20分钟，重点练习\"揽雀尾\"、\"单鞭\"", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "晒太阳", "desc": "上午晒背15分钟，补阳气，促进维生素D合成", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "阴虚质": [
+      { "title": "百合粥", "desc": "百合50g、大米50g，煮粥作晚餐，养阴润肺，改善口干", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "枸杞茶", "desc": "枸杞10g，沸水冲泡，代茶饮，每日1剂，滋补肾阴", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "六字诀", "desc": "重点练习\"呵\"、\"呬\"字诀，每日10分钟，养阴清热", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "避免熬夜", "desc": "子时（23点）前入睡，保证充足睡眠，养护阴液", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "痰湿质": [
+      { "title": "薏米粥", "desc": "薏苡仁30g、大米50g，煮粥作早餐，健脾祛湿", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "陈皮茶", "desc": "陈皮5g、茯苓5g，沸水冲泡，代茶饮，化痰湿", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "快走", "desc": "每次30分钟，每周5次，运动出汗有助于祛湿", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "避免久居湿地", "desc": "保持环境干燥通风，避免潮湿环境加重痰湿", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "湿热质": [
+      { "title": "冬瓜汤", "desc": "冬瓜200g、薏苡仁15g，煮汤，清热利湿", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "苦瓜炒蛋", "desc": "苦瓜1根、鸡蛋2个，炒食，清热解毒", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "八段锦", "desc": "重点\"摇头摆尾去心火\"，清利湿热，每日15分钟", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "宽松透气衣物", "desc": "避免紧身衣物，保持皮肤干爽，减少湿热蕴结", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "血瘀质": [
+      { "title": "山楂水", "desc": "山楂15g、红糖5g，煮水饮用，活血化瘀", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "当归煮蛋", "desc": "当归5g、鸡蛋1个、红糖适量，同煮，养血活血", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "太极拳", "desc": "促进气血运行，每日20分钟，重点\"云手\"", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "避免久坐", "desc": "每小时活动一次，促进血液循环", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "气郁质": [
+      { "title": "玫瑰花茶", "desc": "玫瑰花5g、陈皮3g，沸水冲泡，疏肝解郁", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "陈皮普洱茶", "desc": "陈皮5g、普洱茶5g，同泡，理气和胃", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "瑜伽深呼吸", "desc": "每日10分钟，配合腹式呼吸，疏肝解郁", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "多与人交流", "desc": "保持社交活动，倾诉情绪，避免郁结", "type": "起居", "category": "living", "level": "core" }
+    ],
+    "特禀质": [
+      { "title": "山药粥", "desc": "山药100g、大米50g，煮粥，益气固表", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "黄芪茶", "desc": "黄芪5g、防风3g，沸水冲泡，益气固表，抗过敏", "type": "食饮", "category": "diet", "level": "core" },
+      { "title": "室内八段锦", "desc": "避免花粉，每日15分钟，增强体质", "type": "功法", "category": "exercise", "level": "core" },
+      { "title": "佩戴口罩", "desc": "外出时佩戴口罩，减少过敏原接触", "type": "起居", "category": "living", "level": "core" }
+    ]
+  },
+  "season": {
+    "spring": [
+      { "title": "荠菜豆腐汤", "desc": "荠菜150g、豆腐200g，煮汤，平肝明目，适合春季", "type": "食饮", "category": "diet" },
+      { "title": "韭菜炒鸡蛋", "desc": "韭菜200g、鸡蛋2个，炒食，温补阳气，助肝气升发", "type": "食饮", "category": "diet" },
+      { "title": "按揉太冲穴", "desc": "足背第一、二跖骨间凹陷处，每日按揉3分钟，疏肝理气", "type": "起居", "category": "living" },
+      { "title": "春季养肝导引", "desc": "晨起梳头100下，配合伸懒腰，舒展肝胆经", "type": "功法", "category": "exercise" }
+    ],
+    "summer": [
+      { "title": "绿豆汤", "desc": "绿豆50g、冰糖适量，煮汤，清热解毒，防暑降温", "type": "食饮", "category": "diet" },
+      { "title": "冬瓜", "desc": "冬瓜200g、薏苡仁15g，煮汤，清热解暑利湿", "type": "食饮", "category": "diet" },
+      { "title": "呵字诀", "desc": "清心火，每日练习10分钟，配合深呼吸", "type": "功法", "category": "exercise" },
+      { "title": "清晨或傍晚锻炼", "desc": "避免高温时段运动，选择晨起或傍晚凉爽时段", "type": "起居", "category": "living" }
+    ],
+    "autumn": [
+      { "title": "梨", "desc": "梨1个、冰糖适量，炖汤，润肺生津，缓解秋燥", "type": "食饮", "category": "diet" },
+      { "title": "银耳", "desc": "银耳10g、百合10g，炖羹，滋阴润肺", "type": "食饮", "category": "diet" },
+      { "title": "呬字诀", "desc": "润肺养阴，每日练习10分钟，配合深呼吸", "type": "功法", "category": "exercise" },
+      { "title": "早卧早起", "desc": "顺应秋季收敛之气，早睡早起，收敛神气", "type": "起居", "category": "living" }
+    ],
+    "winter": [
+      { "title": "羊肉", "desc": "羊肉200g、生姜5片，炖汤，温补肾阳，抵御寒邪", "type": "食饮", "category": "diet" },
+      { "title": "核桃", "desc": "核桃2-3枚，每日嚼食，补肾温肺，益智健脑", "type": "食饮", "category": "diet" },
+      { "title": "吹字诀", "desc": "补肾固精，每日练习10分钟，配合深呼吸", "type": "功法", "category": "exercise" },
+      { "title": "日出后锻炼", "desc": "避免清晨寒邪，选择日出后气温升高时锻炼", "type": "起居", "category": "living" }
+    ]
+  },
+  "age": {
+    "infant": [
+      { "title": "母乳/配方奶", "desc": "保证充足营养，按需喂养，0-6个月纯母乳喂养", "type": "食饮", "category": "diet" },
+      { "title": "婴儿抚触", "desc": "每日5-10分钟，促进生长发育，增强亲子关系", "type": "功法", "category": "exercise" },
+      { "title": "规律作息", "desc": "建立良好的睡眠习惯，保证充足睡眠", "type": "起居", "category": "living" }
+    ],
+    "child": [
+      { "title": "牛奶", "desc": "每日500ml，补钙，促进骨骼发育", "type": "食饮", "category": "diet" },
+      { "title": "鸡蛋", "desc": "每日1个，优质蛋白，促进生长发育", "type": "食饮", "category": "diet" },
+      { "title": "少儿五禽戏", "desc": "每天15分钟，模仿动物动作，强身健体", "type": "功法", "category": "exercise" },
+      { "title": "充足睡眠", "desc": "10-12小时，促进生长激素分泌", "type": "起居", "category": "living" }
+    ],
+    "adolescent": [
+      { "title": "牛肉", "desc": "每周2次，强筋骨，补充生长所需蛋白质", "type": "食饮", "category": "diet" },
+      { "title": "海带", "desc": "每周1-2次，补碘，促进甲状腺健康", "type": "食饮", "category": "diet" },
+      { "title": "篮球/跳绳", "desc": "促进骨骼生长，每周3次，每次30分钟", "type": "功法", "category": "exercise" },
+      { "title": "保持正确坐姿", "desc": "预防脊柱侧弯，每节课后活动颈部", "type": "起居", "category": "living" }
+    ],
+    "adult": [
+      { "title": "燕麦", "desc": "早餐食用，稳定血糖，提供持久的能量", "type": "食饮", "category": "diet" },
+      { "title": "西蓝花", "desc": "每周2-3次，护肝，富含维生素和抗氧化物质", "type": "食饮", "category": "diet" },
+      { "title": "快走/慢跑", "desc": "每周150分钟，提升心肺功能", "type": "功法", "category": "exercise" },
+      { "title": "避免久坐", "desc": "每45分钟活动一次，预防腰椎颈椎问题", "type": "起居", "category": "living" }
+    ],
+    "senior": [
+      { "title": "深海鱼", "desc": "每周2次三文鱼或鳕鱼，补充Omega-3，护心脑血管", "type": "食饮", "category": "diet" },
+      { "title": "山药", "desc": "鲜山药150g、猪脊骨200g，炖汤，易消化，健脾补肾", "type": "食饮", "category": "diet" },
+      { "title": "坐式八段锦", "desc": "采用坐姿练习，重点\"两手托天\"、\"左右开弓\"，防跌倒", "type": "功法", "category": "exercise" },
+      { "title": "防滑鞋", "desc": "选择防滑鞋底，浴室安装扶手，预防跌倒", "type": "起居", "category": "living" }
+    ]
+  },
+  "disease": {
+    "高血压": [
+      { "title": "降压操", "desc": "缓慢转头左右各10次、耸肩10次、深呼吸5次，每日早晚各1遍", "type": "功法", "category": "exercise" },
+      { "title": "监测血压", "desc": "晨起排空后、睡前各测量1次，记录数值", "type": "起居", "category": "living" },
+      { "title": "菊花决明子茶", "desc": "菊花5g、决明子10g，沸水冲泡，代茶饮，平肝潜阳", "type": "食饮", "category": "diet" },
+      { "title": "按揉太冲、曲池", "desc": "太冲（足背）、曲池（肘横纹外侧），每穴按揉2分钟，每日2次", "type": "起居", "category": "living" }
+    ],
+    "高血糖": [
+      { "title": "餐后散步", "desc": "每餐后15分钟，促进糖代谢，降低餐后血糖", "type": "功法", "category": "exercise" },
+      { "title": "足部护理", "desc": "每日检查双脚，保持干燥，预防糖尿病足", "type": "起居", "category": "living" },
+      { "title": "苦瓜茶", "desc": "苦瓜干5g，沸水冲泡，辅助降糖", "type": "食饮", "category": "diet" }
+    ],
+    "高脂血症": [
+      { "title": "快走", "desc": "每周5次，每次30分钟，促进脂代谢", "type": "功法", "category": "exercise" },
+      { "title": "低脂饮食", "desc": "减少动物内脏、油炸食品，增加膳食纤维", "type": "食饮", "category": "diet" },
+      { "title": "山楂荷叶茶", "desc": "山楂10g、荷叶5g，沸水冲泡，辅助降脂", "type": "食饮", "category": "diet" }
+    ],
+    "冠心病": [
+      { "title": "太极拳（简式）", "desc": "避免发力，以意导气，每日20分钟，改善心功能", "type": "功法", "category": "exercise" },
+      { "title": "冬季保暖", "desc": "避免寒冷刺激，及时添加衣物", "type": "起居", "category": "living" },
+      { "title": "丹参茶", "desc": "丹参5g、山楂5g，沸水冲泡，活血化瘀", "type": "食饮", "category": "diet" }
+    ],
+    "痛风": [
+      { "title": "游泳", "desc": "每周2-3次，减轻关节负担，有氧运动", "type": "功法", "category": "exercise" },
+      { "title": "大量饮水", "desc": "每日2000ml以上，促进尿酸排泄", "type": "起居", "category": "living" },
+      { "title": "玉米须茶", "desc": "玉米须15g，煮水饮用，利尿排酸", "type": "食饮", "category": "diet" }
+    ],
+    "慢性胃炎": [
+      { "title": "腹部按摩", "desc": "轻柔顺时针揉腹50次，每日2次，促进消化", "type": "功法", "category": "exercise" },
+      { "title": "规律进餐", "desc": "定时定量，每餐七分饱，避免暴饮暴食", "type": "起居", "category": "living" },
+      { "title": "山药小米粥", "desc": "山药50g、小米50g，煮粥，养胃健脾", "type": "食饮", "category": "diet" }
+    ],
+    "消化性溃疡": [
+      { "title": "腹部按摩", "desc": "轻柔按摩上腹部，每日2次，每次5分钟", "type": "功法", "category": "exercise" },
+      { "title": "少食多餐", "desc": "每天5-6餐，每餐少量，避免空腹胃酸刺激", "type": "起居", "category": "living" },
+      { "title": "南瓜粥", "desc": "南瓜100g、大米50g，煮粥，养胃护胃", "type": "食饮", "category": "diet" }
+    ],
+    "慢性肝炎": [
+      { "title": "八段锦", "desc": "疏肝理气，每日15分钟，重点\"调理脾胃须单举\"", "type": "功法", "category": "exercise" },
+      { "title": "绝对禁酒", "desc": "保证休息，避免劳累，定期复查肝功能", "type": "起居", "category": "living" },
+      { "title": "枸杞菊花茶", "desc": "枸杞5g、菊花3g，沸水冲泡，清肝明目", "type": "食饮", "category": "diet" }
+    ],
+    "慢性肾病": [
+      { "title": "太极拳", "desc": "缓慢柔和，每日20分钟，避免剧烈运动", "type": "功法", "category": "exercise" },
+      { "title": "监测血压", "desc": "避免劳累，定期监测肾功能指标", "type": "起居", "category": "living" },
+      { "title": "玉米须茶", "desc": "玉米须10g，煮水饮用，辅助保肾", "type": "食饮", "category": "diet" }
+    ],
+    "慢性支气管炎": [
+      { "title": "腹式呼吸", "desc": "每次10分钟，每日2次，改善肺功能", "type": "功法", "category": "exercise" },
+      { "title": "注意保暖", "desc": "多饮水，避免寒冷刺激，预防感冒", "type": "起居", "category": "living" },
+      { "title": "川贝雪梨汤", "desc": "川贝3g、雪梨1个，炖汤，润肺化痰", "type": "食饮", "category": "diet" }
+    ]
+  },
+  "exercise": {
+    "平和质": [
+      { "title": "五禽戏", "desc": "全面调理，每日15-20分钟，动作舒缓", "type": "功法", "category": "exercise" },
+      { "title": "散步", "desc": "每日30分钟，保持健康体魄", "type": "功法", "category": "exercise" }
+    ],
+    "基本平和质": [
+      { "title": "五禽戏", "desc": "全面调理，每日15-20分钟，动作舒缓", "type": "功法", "category": "exercise" },
+      { "title": "散步", "desc": "每日30分钟，保持健康体魄", "type": "功法", "category": "exercise" }
+    ],
+    "气虚质": [
+      { "title": "八段锦（完整版）", "desc": "全套动作，配合逆腹式呼吸，每日15分钟，饭后1小时练习", "type": "功法", "category": "exercise" },
+      { "title": "太极拳", "desc": "以意领气，每日20分钟，练习\"起势\"、\"野马分鬃\"", "type": "功法", "category": "exercise" }
+    ],
+    "阳虚质": [
+      { "title": "八段锦", "desc": "重点\"两手攀足固肾腰\"，震动阳气，每日15分钟", "type": "功法", "category": "exercise" },
+      { "title": "太极拳", "desc": "温通阳气，每日20分钟，练习\"单鞭\"、\"搂膝拗步\"", "type": "功法", "category": "exercise" }
+    ],
+    "阴虚质": [
+      { "title": "六字诀", "desc": "重点练习\"呵\"、\"呬\"字诀，养阴清热，每日10分钟", "type": "功法", "category": "exercise" },
+      { "title": "瑜伽冥想", "desc": "宁心安神，每日15分钟，配合呼吸", "type": "功法", "category": "exercise" }
+    ],
+    "痰湿质": [
+      { "title": "快走", "desc": "每次30分钟，微出汗为宜，促进脂代谢", "type": "功法", "category": "exercise" },
+      { "title": "腹部按摩", "desc": "顺时针揉腹100次，每日2次，健脾化痰", "type": "功法", "category": "exercise" }
+    ],
+    "湿热质": [
+      { "title": "八段锦", "desc": "重点\"摇头摆尾去心火\"，清利湿热，每日15分钟", "type": "功法", "category": "exercise" },
+      { "title": "游泳", "desc": "每周2-3次，清热利湿，有氧运动", "type": "功法", "category": "exercise" }
+    ],
+    "血瘀质": [
+      { "title": "太极拳", "desc": "促进气血运行，每日20分钟，重点\"云手\"", "type": "功法", "category": "exercise" },
+      { "title": "经络拍打", "desc": "拍打胆经（大腿外侧），每日10分钟", "type": "功法", "category": "exercise" }
+    ],
+    "气郁质": [
+      { "title": "瑜伽深呼吸", "desc": "疏肝解郁，每日10分钟，配合扩胸运动", "type": "功法", "category": "exercise" },
+      { "title": "扩胸运动", "desc": "缓解胸闷，每日20次，配合深呼吸", "type": "功法", "category": "exercise" }
+    ],
+    "特禀质": [
+      { "title": "室内八段锦", "desc": "避免花粉，每日15分钟，增强体质", "type": "功法", "category": "exercise" }
+    ]
+  },
+  "tea": {
+    "平和质": {
+      "name": "参芪五味茶",
+      "ingredients": "党参5g、黄芪5g、五味子3g、甘草2g",
+      "method": "沸水冲泡，焖10分钟",
+      "effect": "益气养阴，扶正固本",
+      "suitable": "平和体质人群",
+      "taboo": "感冒发热、实热证慎用"
+    },
+    "基本平和质": {
+      "name": "陈皮茯苓茶",
+      "ingredients": "陈皮3g、茯苓5g、甘草2g",
+      "method": "沸水煮5分钟",
+      "effect": "健脾理气，巩固平和",
+      "suitable": "基本平和但稍有湿滞",
+      "taboo": "阴虚燥渴者慎用"
+    },
+    "气虚质": {
+      "name": "黄芪补气茶",
+      "ingredients": "黄芪10g、党参5g、大枣3枚",
+      "method": "沸水煮15分钟",
+      "effect": "补中益气，升阳举陷",
+      "suitable": "气虚质人群（易疲劳、气短）",
+      "taboo": "感冒发热、阴虚火旺者忌用"
+    },
+    "阳虚质": {
+      "name": "姜枣温阳茶",
+      "ingredients": "生姜3片、红枣5枚、肉桂2g、红糖10g",
+      "method": "沸水煮10分钟",
+      "effect": "温补阳气，散寒止痛",
+      "suitable": "阳虚质人群（畏寒怕冷）",
+      "taboo": "阴虚内热、糖尿病患者慎用"
+    },
+    "阴虚质": {
+      "name": "百合麦冬茶",
+      "ingredients": "百合10g、麦冬5g、沙参5g、玉竹5g",
+      "method": "沸水冲泡，焖8分钟",
+      "effect": "养阴润肺，生津止渴",
+      "suitable": "阴虚质人群（口干咽燥）",
+      "taboo": "风寒咳嗽、痰湿内盛者慎用"
+    },
+    "痰湿质": {
+      "name": "陈皮茯苓茶（加强版）",
+      "ingredients": "陈皮5g、茯苓10g、薏苡仁10g、荷叶3g",
+      "method": "沸水煮15分钟",
+      "effect": "健脾祛湿，化痰消脂",
+      "suitable": "痰湿质人群（肥胖、胸闷）",
+      "taboo": "孕妇慎用（薏苡仁）"
+    },
+    "湿热质": {
+      "name": "荷叶绿豆茶",
+      "ingredients": "荷叶5g、绿豆15g、薏苡仁10g、金银花3g",
+      "method": "沸水煮20分钟",
+      "effect": "清热利湿，解毒消暑",
+      "suitable": "湿热质人群（口苦口臭）",
+      "taboo": "脾胃虚寒、孕妇慎用"
+    },
+    "血瘀质": {
+      "name": "山楂桃仁茶",
+      "ingredients": "山楂10g、桃仁5g、玫瑰花5g、红糖5g",
+      "method": "沸水冲泡，焖10分钟",
+      "effect": "活血化瘀，通络止痛",
+      "suitable": "血瘀质人群（肤色晦暗）",
+      "taboo": "孕妇、月经量过多者禁用"
+    },
+    "气郁质": {
+      "name": "玫瑰佛手茶",
+      "ingredients": "玫瑰花5g、佛手5g、合欢花3g、陈皮3g",
+      "method": "沸水冲泡，焖5分钟",
+      "effect": "疏肝解郁，理气安神",
+      "suitable": "气郁质人群（烦闷不乐）",
+      "taboo": "阴虚火旺者慎用"
+    },
+    "特禀质": {
+      "name": "黄芪防风茶",
+      "ingredients": "黄芪10g、防风5g、白术5g、甘草3g",
+      "method": "沸水煮15分钟",
+      "effect": "益气固表，祛风抗敏",
+      "suitable": "特禀质人群（易过敏）",
+      "taboo": "感冒发热、实热内盛者慎用"
+    },
+    "默认": {
+      "name": "甘草大枣茶",
+      "ingredients": "甘草3g、大枣5枚",
+      "method": "沸水冲泡，焖10分钟",
+      "effect": "和中缓急，安神",
+      "suitable": "各种体质通用",
+      "taboo": "水肿、高血压患者慎用"
+    }
+  }
+}
