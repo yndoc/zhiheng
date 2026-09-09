@@ -1,6 +1,94 @@
 {
+  "version": "1.0.0",
+  "updateTime": "2026-01-15T10:00:00Z",
+  "description": "执衡知医 R1.14 知识库模块注册表",
   "modules": [
-    // ... 已有模块 ...
+    {
+      "id": "tongue",
+      "name": "舌诊",
+      "icon": "👅",
+      "dataUrl": "https://your-domain.com/data/tongue.json",
+      "searchFields": ["name", "description", "category"],
+      "displayFields": [
+        { "key": "name", "label": "名称" },
+        { "key": "category", "label": "分类" },
+        { "key": "description", "label": "描述" }
+      ]
+    },
+    {
+      "id": "pulse",
+      "name": "脉诊",
+      "icon": "🫀",
+      "dataUrl": "https://your-domain.com/data/pulse.json",
+      "searchFields": ["name", "description", "category"],
+      "displayFields": [
+        { "key": "name", "label": "脉象名称" },
+        { "key": "category", "label": "分类" },
+        { "key": "description", "label": "脉象特征" }
+      ]
+    },
+    {
+      "id": "therapies",
+      "name": "外治法",
+      "icon": "📚",
+      "dataUrl": "https://your-domain.com/data/therapies.json",
+      "searchFields": ["name", "principle", "indications", "operation", "contraindications"],
+      "displayFields": [
+        { "key": "name", "label": "疗法名称" },
+        { "key": "principle", "label": "核心原理" },
+        { "key": "indications", "label": "适应症" },
+        { "key": "operation", "label": "操作方法" },
+        { "key": "contraindications", "label": "注意事项" },
+        { "key": "references", "label": "参考文献" }
+      ]
+    },
+    {
+      "id": "diseases",
+      "name": "关联疾病",
+      "icon": "🩺",
+      "dataUrl": "https://your-domain.com/data/diseases.json",
+      "searchFields": ["name", "common_symptoms", "related_syndromes"],
+      "displayFields": [
+        { "key": "name", "label": "疾病名称" },
+        { "key": "related_syndromes", "label": "关联证型" },
+        { "key": "common_symptoms", "label": "常见症状" },
+        { "key": "weight", "label": "关联权重" }
+      ]
+    },
+    {
+      "id": "prescriptions",
+      "name": "处方库",
+      "icon": "💊",
+      "dataUrl": "https://your-domain.com/data/prescriptions.json",
+      "searchFields": ["therapy_name", "syndrome_code", "targets", "operation", "advantage", "suitable_diseases", "suitable_constitutions"],
+      "displayFields": [
+        { "key": "therapy_name", "label": "疗法" },
+        { "key": "syndrome_code", "label": "证型" },
+        { "key": "targets", "label": "主穴/部位" },
+        { "key": "operation", "label": "操作方法" },
+        { "key": "course", "label": "疗程" },
+        { "key": "note", "label": "注意事项" },
+        { "key": "advantage", "label": "功效特点" },
+        { "key": "suitable_diseases", "label": "适宜病种" }
+      ]
+    },
+    {
+      "id": "jinzhen",
+      "name": "揿针（皮内针）",
+      "icon": "📌",
+      "dataUrl": "https://your-domain.com/data/jinzhen.json",
+      "searchFields": ["name", "syndrome_code", "targets", "operation", "advantage", "suitable_diseases"],
+      "displayFields": [
+        { "key": "name", "label": "方案" },
+        { "key": "syndrome_code", "label": "证型" },
+        { "key": "targets", "label": "主穴" },
+        { "key": "operation", "label": "操作方法" },
+        { "key": "course", "label": "疗程" },
+        { "key": "note", "label": "注意事项" },
+        { "key": "advantage", "label": "功效" },
+        { "key": "suitable_diseases", "label": "适宜病种" }
+      ]
+    },
     {
       "id": "jinsanzhen",
       "name": "靳三针",
@@ -15,6 +103,34 @@
         { "key": "method", "label": "操作方法" },
         { "key": "indications", "label": "主治病症" },
         { "key": "note", "label": "备注" }
+      ]
+    },
+    {
+      "id": "balance",
+      "name": "平衡针",
+      "icon": "⚖️",
+      "dataUrl": "https://your-domain.com/data/balance.json",
+      "searchFields": ["name", "location", "indications", "method"],
+      "displayFields": [
+        { "key": "name", "label": "穴位名称" },
+        { "key": "location", "label": "定位" },
+        { "key": "indications", "label": "主治" },
+        { "key": "method", "label": "操作方法" }
+      ]
+    },
+    {
+      "id": "remote_prescriptions",
+      "name": "远程处方扩展",
+      "icon": "📦",
+      "dataUrl": "https://your-domain.com/remote_prescriptions.json",
+      "searchFields": ["therapy_name", "syndrome_code", "targets", "advantage", "suitable_diseases"],
+      "displayFields": [
+        { "key": "therapy_name", "label": "疗法" },
+        { "key": "syndrome_code", "label": "证型" },
+        { "key": "targets", "label": "主穴" },
+        { "key": "operation", "label": "操作" },
+        { "key": "advantage", "label": "功效" },
+        { "key": "suitable_diseases", "label": "适应病种" }
       ]
     }
   ]
