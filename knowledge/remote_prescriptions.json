@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "updateTime": "2025-01-15",
+  "prescriptions": [
+    {
+      "id": "JZ001",
+      "syndrome_code": "T008",
+      "therapy_code": "M999",
+      "therapy_name": "靳三针（调神针法）",
+      "contraindication_group": "FORBID_COMMON",
+      "targets": ["智三针", "鼻三针"],
+      "acupoints_detail": [
+        { "name": "智三针", "location": "神庭、本神（双）", "method": "平补平泻" },
+        { "name": "鼻三针", "location": "迎香（双）、印堂", "method": "平补平泻" }
+      ],
+      "operation": "常规针刺，留针30分钟",
+      "course": "每日1次，7次为一疗程",
+      "note": "适用于肝郁气滞所致的焦虑、抑郁",
+      "advantage": "疏肝解郁，调神定志",
+      "suitable_constitutions": ["气郁质"],
+      "suitable_diseases": ["焦虑", "抑郁症"]
+    },
+    {
+      "id": "JZ002",
+      "syndrome_code": "T204",
+      "therapy_code": "M999",
+      "therapy_name": "靳三针（颞三针）",
+      "contraindication_group": "FORBID_COMMON",
+      "targets": ["颞三针", "脑三针"],
+      "acupoints_detail": [
+        { "name": "颞三针", "location": "率谷（双）及周围", "method": "平补平泻" },
+        { "name": "脑三针", "location": "脑户、脑空（双）", "method": "平补平泻" }
+      ],
+      "operation": "常规针刺，留针30分钟",
+      "course": "每日1次，7次为一疗程",
+      "note": "适用于肝火上炎所致的头痛、眩晕",
+      "advantage": "平肝潜阳，清泻肝火",
+      "suitable_constitutions": ["气郁质", "湿热质"],
+      "suitable_diseases": ["头痛", "高血压"]
+    },
+    {
+      "id": "REMOTE_002",
+      "syndrome_code": "T006",
+      "therapy_code": "M010",
+      "therapy_name": "平衡针（头痛穴）",
+      "contraindication_group": "FORBID_COMMON",
+      "targets": ["头痛穴"],
+      "acupoints_detail": [
+        { "name": "头痛穴", "location": "足背第1、2跖骨之间（太冲穴附近）", "method": "直刺0.5-1寸，强刺激" }
+      ],
+      "operation": "直刺0.5-1寸，得气后强刺激，不留针",
+      "course": "每日1次，3次为一疗程",
+      "note": "适用于偏头痛、神经性头痛",
+      "advantage": "平肝潜阳，通络止痛",
+      "suitable_constitutions": ["气郁质"],
+      "suitable_diseases": ["偏头痛", "紧张性头痛"]
+    }
+  ]
+}
