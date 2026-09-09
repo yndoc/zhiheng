@@ -1,0 +1,21 @@
+{
+  "modules": [
+    // ... 已有模块 ...
+    {
+      "id": "jinsanzhen",
+      "name": "靳三针",
+      "icon": "🧿",
+      "dataUrl": "https://your-domain.com/data/jinsanzhen.json",
+      "searchFields": ["name", "points", "location", "method", "indications", "note", "category"],
+      "displayFields": [
+        { "key": "name", "label": "穴组名称" },
+        { "key": "category", "label": "所属分类" },
+        { "key": "points", "label": "穴位组成" },
+        { "key": "location", "label": "定位" },
+        { "key": "method", "label": "操作方法" },
+        { "key": "indications", "label": "主治病症" },
+        { "key": "note", "label": "备注" }
+      ]
+    }
+  ]
+}
