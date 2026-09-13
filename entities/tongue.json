@@ -1,0 +1,14 @@
+{
+  "type": "tongue",
+  "version": "2.0.0",
+  "displayName": "舌象",
+  "icon": "👅",
+  "entities": [
+    { "id": "TC:薄白苔", "name": "薄白苔", "icon": "👅", "searchText": "薄白苔 舌苔白",
+      "fields": { "category": "舌苔", "description": "舌苔薄白，均匀铺于舌面" },
+      "relations": [ { "type": "suggests", "target": "T:鼻鼽-肺气虚寒", "weight": 8 }, { "type": "suggests", "target": "T:中风-风痰阻络", "weight": 6 } ] },
+    { "id": "TC:黄腻苔", "name": "黄腻苔", "icon": "👅", "searchText": "黄腻苔 舌苔黄腻",
+      "fields": { "category": "舌苔", "description": "舌苔黄而厚腻" },
+      "relations": [ { "type": "suggests", "target": "T:胃痛-脾胃虚寒", "weight": -10 } ] }
+  ]
+}
