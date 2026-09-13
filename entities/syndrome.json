@@ -1,0 +1,37 @@
+{
+  "type": "syndrome",
+  "version": "2.0.0",
+  "displayName": "证型",
+  "icon": "🔥",
+  "entities": [
+    { "id": "T:中风-风痰阻络", "name": "中风·风痰阻络证", "icon": "🔥",
+      "searchText": "中风 风痰 阻络 偏瘫 半身不遂",
+      "fields": { "minScore": 12, "treatment": "祛风化痰，疏通经络", "definition": "风痰上扰，阻滞经络，气血运行不畅", "typical": "半身不遂、口眼歪斜、语言不利、肢体麻木",
+        "scoringRules": [ { "symptom": "S:半身不遂", "score": 12, "required": true }, { "symptom": "S:口眼歪斜", "score": 10 }, { "symptom": "S:语言不利", "score": 8 } ] },
+      "relations": [ { "type": "relatedTo", "target": "M:颞三针" }, { "type": "relatedTo", "target": "M:脑三针" } ] },
+
+    { "id": "T:颈痹-寒湿阻络", "name": "颈痹·寒湿阻络证", "icon": "🔥",
+      "searchText": "颈椎病 寒湿 颈痛 项强",
+      "fields": { "minScore": 10, "treatment": "散寒除湿，通络止痛", "definition": "寒湿之邪侵袭颈项，经络痹阻", "typical": "颈项强痛、遇寒加重、肩臂酸痛",
+        "scoringRules": [ { "symptom": "S:颈项强痛", "score": 12, "required": true }, { "symptom": "S:肩臂酸痛", "score": 8 }, { "symptom": "S:恶寒", "score": 6 } ] },
+      "relations": [ { "type": "relatedTo", "target": "M:颈三针" } ] },
+
+    { "id": "T:鼻鼽-肺气虚寒", "name": "鼻鼽·肺气虚寒证", "icon": "🔥",
+      "searchText": "过敏性鼻炎 鼻塞 流涕 肺气虚",
+      "fields": { "minScore": 10, "treatment": "温肺散寒，宣通鼻窍", "definition": "肺气虚弱，卫表不固，风寒乘虚而入", "typical": "鼻塞、流清涕、打喷嚏、遇风加重",
+        "scoringRules": [ { "symptom": "S:鼻塞", "score": 12, "required": true }, { "symptom": "S:流清涕", "score": 10 }, { "symptom": "S:打喷嚏", "score": 8 } ] },
+      "relations": [ { "type": "relatedTo", "target": "M:鼻三针" } ] },
+
+    { "id": "T:胃痛-脾胃虚寒", "name": "胃痛·脾胃虚寒证", "icon": "🔥",
+      "searchText": "胃痛 脾胃虚寒 胃脘冷痛",
+      "fields": { "minScore": 10, "treatment": "温中健脾，和胃止痛", "definition": "脾胃阳气不足，寒从内生", "typical": "胃脘冷痛、喜温喜按、食欲不振",
+        "scoringRules": [ { "symptom": "S:胃脘冷痛", "score": 12, "required": true }, { "symptom": "S:喜温喜按", "score": 10 }, { "symptom": "S:食欲不振", "score": 8 } ] },
+      "relations": [ { "type": "relatedTo", "target": "M:胃三针" } ] },
+
+    { "id": "T:不寐-心肾不交", "name": "不寐·心肾不交证", "icon": "🔥",
+      "searchText": "失眠 心肾不交 入睡困难",
+      "fields": { "minScore": 10, "treatment": "交通心肾，安神定志", "definition": "心火亢盛，肾水亏虚，水火不济", "typical": "入睡困难、多梦、腰膝酸软、心烦",
+        "scoringRules": [ { "symptom": "S:入睡困难", "score": 12, "required": true }, { "symptom": "S:多梦", "score": 8 }, { "symptom": "S:腰膝酸软", "score": 8 } ] },
+      "relations": [ { "type": "relatedTo", "target": "M:手智针" }, { "type": "relatedTo", "target": "M:四神针" } ] }
+  ]
+}
