@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://cdn.jsdelivr.net/gh/yndoc/zhiheng@main/entities/",
+  "generatedAt": "2025-01-15T08:30:00Z",
+  "types": {
+    "syndrome":     { "version": "2.0.0", "file": "syndromes.json" },
+    "acupoint":     { "version": "2.0.0", "file": "acupoints.json" },
+    "therapy":      { "version": "2.0.0", "file": "therapies.json" },
+    "tongue":       { "version": "2.0.0", "file": "tongue.json" },
+    "pulse":        { "version": "2.0.0", "file": "pulse.json" }
+  }
+}
