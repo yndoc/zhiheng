@@ -1,0 +1,14 @@
+{
+  "type": "pulse",
+  "version": "2.0.0",
+  "displayName": "脉象",
+  "icon": "🫀",
+  "entities": [
+    { "id": "PULSE:弦脉", "name": "弦脉", "icon": "🫀", "searchText": "弦脉 琴弦",
+      "fields": { "category": "实脉类", "description": "端直以长，如按琴弦" },
+      "relations": [ { "type": "suggests", "target": "T:中风-风痰阻络", "weight": 10 }, { "type": "suggests", "target": "T:颈痹-寒湿阻络", "weight": 8 } ] },
+    { "id": "PULSE:沉细脉", "name": "沉细脉", "icon": "🫀", "searchText": "沉细脉 脉沉细",
+      "fields": { "category": "虚脉类", "description": "脉沉而细，重按无力" },
+      "relations": [ { "type": "suggests", "target": "T:胃痛-脾胃虚寒", "weight": 10 }, { "type": "suggests", "target": "T:不寐-心肾不交", "weight": 8 } ] }
+  ]
+}
