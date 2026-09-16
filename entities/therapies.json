@@ -1,235 +1,170 @@
 {
   "type": "therapy",
-  "version": "2.0.0",
-  "displayName": "靳三针",
-  "icon": "🪡",
+  "version": "2.0.5",
   "entities": [
-    { "id": "M:鼻三针", "name": "鼻三针", "icon": "🪡", "searchText": "鼻三针 迎香 上迎香 印堂 过敏性鼻炎 慢性鼻炎",
-      "fields": { "principle": "宣通鼻窍，通利鼻络", "indications": "过敏性鼻炎、慢性鼻炎、鼻窦炎、鼻塞",
-        "operation": "迎香向鼻根方向斜刺0.3-0.5寸；上迎香向内上方斜刺0.3-0.5寸；印堂向下平刺0.5-0.8寸",
-        "contraindications": "鼻部皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:迎香" }, { "type": "uses", "target": "A:上迎香" }, { "type": "uses", "target": "A:印堂" } ] },
-
-    { "id": "M:眼三针", "name": "眼三针", "icon": "🪡", "searchText": "眼三针 睛明 承泣 视神经萎缩 黄斑变性",
-      "fields": { "principle": "滋补肝肾，明目通络", "indications": "视神经萎缩、黄斑变性、视网膜脱落、视疲劳",
-        "operation": "睛明上2分为眼Ⅰ；眶下缘正对瞳孔为眼Ⅱ；眶上缘正对瞳孔为眼Ⅲ。深刺达眼底，不提插不旋转不加电，只向上刮针",
-        "contraindications": "眼部感染禁；出血倾向禁；严重心血管病禁" },
-      "relations": [ { "type": "uses", "target": "A:睛明" }, { "type": "uses", "target": "A:承泣" } ] },
-
-    { "id": "M:耳三针", "name": "耳三针", "icon": "🪡", "searchText": "耳三针 听宫 听会 完骨 耳聋",
-      "fields": { "principle": "通耳窍，益肾聪耳", "indications": "各种耳聋、耳鸣、听力下降",
-        "operation": "三穴均深刺1.2-1.5寸，得气后留针20-30分钟",
-        "contraindications": "耳周皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:听宫" }, { "type": "uses", "target": "A:听会" }, { "type": "uses", "target": "A:完骨" } ] },
-
-    { "id": "M:舌三针", "name": "舌三针", "icon": "🪡", "searchText": "舌三针 上廉泉 语言障碍 流口水 咽炎",
-      "fields": { "principle": "通舌络，利咽喉", "indications": "语言障碍、发音不清、流涎、吞咽障碍、咽炎",
-        "operation": "上廉泉及左右旁开0.8寸各一针，向舌根方向斜刺0.8-1.2寸，不加电，用手法",
-        "contraindications": "颌下皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:上廉泉" }, { "type": "uses", "target": "A:廉泉左" }, { "type": "uses", "target": "A:廉泉右" } ] },
-
-    { "id": "M:晕痛针", "name": "晕痛针", "icon": "🪡", "searchText": "晕痛针 四神针 印堂 太阳 眩晕 美尼尔",
-      "fields": { "principle": "升清降浊，定晕止痛", "indications": "美尼尔氏综合症、眩晕、头晕头痛、头顶痛、偏头痛、前额痛",
-        "operation": "四神针向外斜刺0.8-1寸；印堂向下平刺0.5-0.8寸；太阳直刺0.5-0.8寸",
-        "contraindications": "头部皮肤破损禁；出血倾向禁；高热禁" },
-      "relations": [ { "type": "uses", "target": "A:百会" }, { "type": "uses", "target": "A:印堂" }, { "type": "uses", "target": "A:太阳" } ] },
-
-    { "id": "M:颈三针", "name": "颈三针", "icon": "🪡", "searchText": "颈三针 天柱 百劳 大杼 颈椎病",
-      "fields": { "principle": "舒筋活络，通利颈项", "indications": "颈椎病、颈项强痛、颈肩综合征",
-        "operation": "天柱直刺0.5-0.8寸；百劳直刺0.5-1寸；大杼斜刺0.5-0.8寸",
-        "contraindications": "颈部皮肤破损禁；严重骨质疏松禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:天柱" }, { "type": "uses", "target": "A:百劳" }, { "type": "uses", "target": "A:大杼" } ] },
-
-    { "id": "M:胆三针", "name": "胆三针", "icon": "🪡", "searchText": "胆三针 日月 期门 阳陵泉 胆囊炎",
-      "fields": { "principle": "疏肝利胆，理气止痛", "indications": "胆囊炎、胆结石、胁肋胀痛、口苦",
-        "operation": "日月斜刺0.5-0.8寸；期门斜刺0.5-0.8寸；阳陵泉直刺1-1.5寸",
-        "contraindications": "胁肋部皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:阳陵泉" } ] },
-
-    { "id": "M:尿三针", "name": "尿三针", "icon": "🪡", "searchText": "尿三针 关元 中极 三阴交 尿频 尿急",
-      "fields": { "principle": "温肾固脬，通利水道", "indications": "尿频、尿急、尿失禁、遗尿、前列腺增生",
-        "operation": "关元直刺0.8-1.2寸；中极直刺0.8-1.2寸；三阴交直刺1-1.5寸",
-        "contraindications": "孕妇禁；下腹部皮肤破损禁；尿潴留需导尿后针刺" },
-      "relations": [ { "type": "uses", "target": "A:关元" }, { "type": "uses", "target": "A:中极" }, { "type": "uses", "target": "A:三阴交" } ] },
-
-    { "id": "M:肥三针", "name": "肥三针", "icon": "🪡", "searchText": "肥三针 中脘 带脉 足三里 肥胖",
-      "fields": { "principle": "健脾化湿，消脂减肥", "indications": "单纯性肥胖、代谢综合征、高血脂",
-        "operation": "中脘直刺1-1.5寸；带脉直刺1-1.5寸；足三里直刺1-1.5寸",
-        "contraindications": "孕妇禁；腹部皮肤破损禁" },
-      "relations": [ { "type": "uses", "target": "A:中脘" }, { "type": "uses", "target": "A:足三里" } ] },
-
-    { "id": "M:智三针", "name": "智三针", "icon": "🪡", "searchText": "智三针 神庭 本神 智力低下",
-      "fields": { "principle": "醒脑开窍，益智安神", "indications": "智力低下、精神障碍、小儿脑瘫、痴呆",
-        "operation": "神庭、本神均针尖向下或向上平刺0.8-1寸，捻转针法",
-        "contraindications": "头部皮肤破损禁；婴儿囟门未闭禁" },
-      "relations": [ { "type": "uses", "target": "A:神庭" }, { "type": "uses", "target": "A:本神" } ] },
-
-    { "id": "M:四神针", "name": "四神针", "icon": "🪡", "searchText": "四神针 百会 智力低下 精神障碍 头疼",
-      "fields": { "principle": "调神醒脑，平衡阴阳", "indications": "智力低下、精神障碍、头痛、头晕、失眠",
-        "operation": "百会前后左右各1.5寸，针尖向外方斜刺0.8-1寸",
-        "contraindications": "头部皮肤破损禁；婴儿囟门未闭禁" },
-      "relations": [ { "type": "uses", "target": "A:百会" } ] },
-
-    { "id": "M:脑三针", "name": "脑三针", "icon": "🪡", "searchText": "脑三针 脑户 脑空 肢体活动障碍",
-      "fields": { "principle": "通脑络，调平衡", "indications": "肢体活动障碍、躯体不平衡、后头痛、小脑病变",
-        "operation": "脑户、脑空均针尖向下沿皮刺0.8-1寸",
-        "contraindications": "枕部皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:脑户" }, { "type": "uses", "target": "A:脑空" } ] },
-
-    { "id": "M:颞三针", "name": "颞三针", "icon": "🪡", "searchText": "颞三针 中风偏瘫 运动障碍 帕金森",
-      "fields": { "principle": "疏通颞部经络，改善运动感觉", "indications": "脑血管意外后遗症、半身不遂、口眼歪斜、脑动脉硬化、耳鸣耳聋、偏头痛、帕金森、脑萎缩、老年性痴呆",
-        "operation": "颞Ⅰ针耳尖直上发际2寸；颞Ⅱ、颞Ⅲ在其前后各旁开1寸。针尖向下沿皮下平刺1.2-1.5寸",
-        "contraindications": "颞部皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:颞1" }, { "type": "uses", "target": "A:颞2" }, { "type": "uses", "target": "A:颞3" } ] },
-
-    { "id": "M:定神针", "name": "定神针", "icon": "🪡", "searchText": "定神针 印堂 阳白 注意力不集中",
-      "fields": { "principle": "安神定志，清利头目", "indications": "注意力不集中、斜视、前额头痛、眼球震颤、眩晕、视力下降",
-        "operation": "印堂上0.5寸、左右阳白上0.5寸，沿皮下向下直刺0.5-0.8寸，出针时棉球压针口防出血",
-        "contraindications": "前额皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:定神1" }, { "type": "uses", "target": "A:定神2" }, { "type": "uses", "target": "A:定神3" } ] },
-
-    { "id": "M:痫三针", "name": "痫三针", "icon": "🪡", "searchText": "痫三针 内关 申脉 照海 癫痫",
-      "fields": { "principle": "调神定痫，通调跷脉", "indications": "癫痫、抽搐、小儿惊风",
-        "operation": "内关直刺0.5-0.8寸；申脉直刺0.3-0.5寸；照海直刺0.5-0.8寸",
-        "contraindications": "癫痫发作期禁针；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:内关" } ] },
-
-    { "id": "M:手智针", "name": "手智针", "icon": "🪡", "searchText": "手智针 内关 神门 劳宫 弱智 多动",
-      "fields": { "principle": "清心安神，通调手部经气", "indications": "弱智、多动症、失眠、癫痫、手运动障碍",
-        "operation": "三穴均直刺0.5-0.8寸",
-        "contraindications": "腕掌部皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:内关" }, { "type": "uses", "target": "A:神门" }, { "type": "uses", "target": "A:劳宫" } ] },
-
-    { "id": "M:足智针", "name": "足智针", "icon": "🪡", "searchText": "足智针 涌泉 泉中 泉中内 弱智",
-      "fields": { "principle": "补肾益智，通调足部经气", "indications": "弱智、小儿脑瘫、足运动障碍",
-        "operation": "涌泉直刺0.5-0.8寸；泉中、泉中内均直刺0.5-0.8寸",
-        "contraindications": "足底皮肤破损禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:涌泉" }, { "type": "uses", "target": "A:泉中" }, { "type": "uses", "target": "A:泉中内" } ] },
-
-    { "id": "M:手三针", "name": "手三针", "icon": "🪡", "searchText": "手三针 合谷 曲池 外关 上肢瘫痪",
-      "fields": { "principle": "疏通上肢经络，调和气血", "indications": "上肢瘫痪、肩臂疼痛、手部麻木",
-        "operation": "合谷直刺0.5-0.8寸；曲池直刺1-1.5寸；外关直刺0.5-0.8寸",
-        "contraindications": "上肢皮肤破损禁；孕妇禁合谷" },
-      "relations": [ { "type": "uses", "target": "A:合谷" }, { "type": "uses", "target": "A:曲池" }, { "type": "uses", "target": "A:外关" } ] },
-
-    { "id": "M:足三针", "name": "足三针", "icon": "🪡", "searchText": "足三针 足三里 三阴交 太冲 下肢瘫痪",
-      "fields": { "principle": "疏通下肢经络，健脾益肝", "indications": "下肢瘫痪、腰膝酸软、下肢麻木",
-        "operation": "足三里直刺1-1.5寸；三阴交直刺1-1.5寸；太冲直刺0.5-0.8寸",
-        "contraindications": "下肢皮肤破损禁；孕妇禁三阴交" },
-      "relations": [ { "type": "uses", "target": "A:足三里" }, { "type": "uses", "target": "A:三阴交" }, { "type": "uses", "target": "A:太冲" } ] },
-
-    { "id": "M:肩三针", "name": "肩三针", "icon": "🪡", "searchText": "肩三针 肩髃 肩前 肩后 肩周炎",
-      "fields": { "principle": "疏经通络，滑利肩节", "indications": "肩周炎、肩关节疼痛、上肢活动受限",
-        "operation": "肩髃直刺1-1.5寸；肩前、肩后直刺1-1.5寸",
-        "contraindications": "肩部皮肤破损禁；肩关节脱位复位前禁" },
-      "relations": [ { "type": "uses", "target": "A:肩髃" }, { "type": "uses", "target": "A:肩前" }, { "type": "uses", "target": "A:肩后" } ] },
-
-    { "id": "M:背三针", "name": "背三针", "icon": "🪡", "searchText": "背三针 大杼 风门 肺俞 感冒咳嗽",
-      "fields": { "principle": "宣肺解表，疏通背部经气", "indications": "感冒、咳嗽、哮喘、背痛",
-        "operation": "三穴均斜刺0.5-0.8寸，不可深刺以防气胸",
-        "contraindications": "背部皮肤破损禁；严重心肺疾病慎用；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:大杼" }, { "type": "uses", "target": "A:风门" }, { "type": "uses", "target": "A:肺俞" } ] },
-
-    { "id": "M:腰三针", "name": "腰三针", "icon": "🪡", "searchText": "腰三针 肾俞 大肠俞 委中 腰痛",
-      "fields": { "principle": "补肾强腰，通络止痛", "indications": "腰痛、腰肌劳损、腰椎间盘突出",
-        "operation": "肾俞直刺1-1.5寸；大肠俞直刺1-1.5寸；委中直刺1-1.5寸",
-        "contraindications": "腰部皮肤破损禁；严重骨质疏松禁" },
-      "relations": [ { "type": "uses", "target": "A:肾俞" }, { "type": "uses", "target": "A:大肠俞" }, { "type": "uses", "target": "A:委中" } ] },
-
-    { "id": "M:胃三针", "name": "胃三针", "icon": "🪡", "searchText": "胃三针 中脘 内关 足三里 胃痛",
-      "fields": { "principle": "和胃降逆，健脾理气", "indications": "胃脘痛、胃炎、胃溃疡、消化不良",
-        "operation": "中脘直刺1-1.5寸；内关直刺0.5-0.8寸；足三里直刺1-1.5寸",
-        "contraindications": "饱食后禁针中脘；腹部皮肤破损禁" },
-      "relations": [ { "type": "uses", "target": "A:中脘" }, { "type": "uses", "target": "A:内关" }, { "type": "uses", "target": "A:足三里" } ] },
-
-    { "id": "M:肠三针", "name": "肠三针", "icon": "🪡", "searchText": "肠三针 天枢 关元 上巨虚 腹痛 肠炎",
-      "fields": { "principle": "调理肠腑，理气止痛", "indications": "腹痛、肠炎、痢疾、便秘",
-        "operation": "天枢直刺0.8-1.2寸；关元直刺0.8-1.2寸；上巨虚直刺1-1.5寸",
-        "contraindications": "孕妇禁；腹部皮肤破损禁" },
-      "relations": [ { "type": "uses", "target": "A:天枢" }, { "type": "uses", "target": "A:关元" }, { "type": "uses", "target": "A:上巨虚" } ] },
-
-    { "id": "M:脂三针", "name": "脂三针", "icon": "🪡", "searchText": "脂三针 内关 足三里 三阴交 高血脂",
-      "fields": { "principle": "健脾化痰，活血降脂", "indications": "高胆固醇、高血脂、肥胖",
-        "operation": "内关直刺0.5-0.8寸；足三里直刺1-1.5寸；三阴交直刺1-1.5寸",
-        "contraindications": "孕妇禁三阴交；皮肤破损禁" },
-      "relations": [ { "type": "uses", "target": "A:内关" }, { "type": "uses", "target": "A:足三里" }, { "type": "uses", "target": "A:三阴交" } ] },
-
-    { "id": "M:突三针", "name": "突三针", "icon": "🪡", "searchText": "突三针 水突 扶突 天突 甲状腺",
-      "fields": { "principle": "理气散结，利咽消肿", "indications": "甲状腺肿大、咽喉肿痛、瘿瘤",
-        "operation": "水突、扶突直刺0.5-0.8寸；天突先直刺0.2寸后沿胸骨后缘向下平刺0.5-1寸",
-        "contraindications": "颈部血管损伤禁；严重心肺疾病慎用；出血倾向禁" },
-      "relations": [] },
-
-    { "id": "M:乳三针", "name": "乳三针", "icon": "🪡", "searchText": "乳三针 乳根 膻中 肩井 乳腺增生",
-      "fields": { "principle": "疏肝理气，通乳散结", "indications": "乳腺增生、乳汁不通、乳房胀痛",
-        "operation": "乳根斜刺0.5-0.8寸；膻中平刺0.3-0.5寸；肩井直刺0.5-0.8寸",
-        "contraindications": "孕妇禁；乳房皮肤破损禁；乳腺恶性肿瘤禁" },
-      "relations": [] },
-
-    { "id": "M:闭三针", "name": "闭三针", "icon": "🪡", "searchText": "闭三针 十宣 涌泉 人中 昏迷",
-      "fields": { "principle": "开窍醒神，回阳救逆", "indications": "昏迷、休克、中暑、惊厥",
-        "operation": "十宣点刺放血；涌泉直刺0.5-0.8寸；人中向上斜刺0.3-0.5寸",
-        "contraindications": "出血倾向禁十宣放血；非急症慎用" },
-      "relations": [ { "type": "uses", "target": "A:涌泉" } ] },
-
-    { "id": "M:脱三针", "name": "脱三针", "icon": "🪡", "searchText": "脱三针 百会 神阙 人中 脱证",
-      "fields": { "principle": "回阳固脱，升提阳气", "indications": "脱证、虚脱、休克、血压下降",
-        "operation": "百会平刺0.5-0.8寸；神阙隔盐灸或艾灸；人中向上斜刺0.3-0.5寸",
-        "contraindications": "实证高热禁；神阙穴禁针刺，仅灸" },
-      "relations": [ { "type": "uses", "target": "A:百会" } ] },
-
-    { "id": "M:面瘫针", "name": "面瘫针", "icon": "🪡", "searchText": "面瘫针 阳白 太阳 四白 地仓 颊车 面瘫",
-      "fields": { "principle": "祛风通络，调和面部经气", "indications": "面瘫、口眼歪斜、面肌痉挛",
-        "operation": "额睑瘫：阳白、太阳、四白；口面瘫：翳风、合谷、地仓透颊车。地仓透颊车平刺1-1.5寸",
-        "contraindications": "面部皮肤感染禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:阳白" }, { "type": "uses", "target": "A:太阳" }, { "type": "uses", "target": "A:合谷" } ] },
-
-    { "id": "M:褐三针", "name": "褐三针", "icon": "🪡", "searchText": "褐三针 颧髎 下关 太阳 黄褐斑",
-      "fields": { "principle": "活血化瘀，消斑美容", "indications": "黄褐斑、面部色素沉着",
-        "operation": "颧髎直刺0.5-0.8寸；下关直刺0.8-1.2寸；太阳直刺0.5-0.8寸",
-        "contraindications": "面部皮肤破损禁；孕妇禁" },
-      "relations": [ { "type": "uses", "target": "A:太阳" } ] },
-
-    { "id": "M:叉三针", "name": "叉三针", "icon": "🪡", "searchText": "叉三针 太阳 下关 阿是穴 三叉神经痛",
-      "fields": { "principle": "通络止痛，祛风散寒", "indications": "三叉神经痛、面痛",
-        "operation": "太阳直刺0.5-0.8寸；下关直刺0.8-1.2寸；阿是穴直刺0.5-0.8寸",
-        "contraindications": "面部感染禁；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:太阳" } ] },
-
-    { "id": "M:膝三针", "name": "膝三针", "icon": "🪡", "searchText": "膝三针 膝眼 梁丘 血海 膝关节炎",
-      "fields": { "principle": "通利关节，活血止痛", "indications": "膝关节炎、膝关节痛、屈伸不利",
-        "operation": "膝眼向膝中斜刺0.5-1寸；梁丘直刺1-1.5寸；血海直刺1-1.5寸",
-        "contraindications": "膝关节感染禁；关节腔积液严重慎用" },
-      "relations": [] },
-
-    { "id": "M:踝三针", "name": "踝三针", "icon": "🪡", "searchText": "踝三针 解溪 太溪 昆仑 踝关节痛",
-      "fields": { "principle": "通利踝节，舒筋活络", "indications": "踝关节痛、踝关节扭伤、足下垂",
-        "operation": "解溪直刺0.5-0.8寸；太溪直刺0.5-0.8寸；昆仑直刺0.5-0.8寸",
-        "contraindications": "踝部骨折未固定禁；孕妇禁昆仑" },
-      "relations": [] },
-
-    { "id": "M:痿三针", "name": "痿三针", "icon": "🪡", "searchText": "痿三针 曲池 合谷 尺泽 足三里 三阴交 太溪 痿证",
-      "fields": { "principle": "健脾益气，强筋壮骨", "indications": "痿证、肌肉萎缩、肢体无力",
-        "operation": "上肢痿：曲池直刺1-1.5寸，合谷直刺0.5-0.8寸，尺泽直刺1-1.5寸；下肢痿：足三里直刺1-1.5寸，三阴交直刺1-1.5寸，太溪直刺0.5-0.8寸",
-        "contraindications": "肌肉萎缩晚期慎用强刺激；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:曲池" }, { "type": "uses", "target": "A:合谷" }, { "type": "uses", "target": "A:足三里" } ] },
-
-    { "id": "M:坐骨针", "name": "坐骨针", "icon": "🪡", "searchText": "坐骨针 环跳 委中 昆仑 坐骨神经痛",
-      "fields": { "principle": "疏通经络，活血止痛", "indications": "坐骨神经痛、腰腿痛、下肢放射痛",
-        "operation": "环跳直刺2-3寸；委中直刺1-1.5寸；昆仑直刺0.5-0.8寸",
-        "contraindications": "孕妇禁；坐骨神经损伤严重慎用" },
-      "relations": [ { "type": "uses", "target": "A:委中" } ] },
-
-    { "id": "M:手挛三针", "name": "手挛三针", "icon": "🪡", "searchText": "手挛三针 曲池 外关 合谷 中风手痉挛",
-      "fields": { "principle": "舒筋缓挛，调和气血", "indications": "中风后手部痉挛、手指屈曲",
-        "operation": "曲池直刺1-1.5寸；外关直刺0.5-0.8寸；合谷直刺0.5-0.8寸",
-        "contraindications": "痉挛严重时不宜强刺激；出血倾向禁" },
-      "relations": [ { "type": "uses", "target": "A:曲池" }, { "type": "uses", "target": "A:外关" }, { "type": "uses", "target": "A:合谷" } ] },
-
-    { "id": "M:足挛三针", "name": "足挛三针", "icon": "🪡", "searchText": "足挛三针 阳陵泉 三阴交 太冲 中风足痉挛",
-      "fields": { "principle": "柔肝缓急，舒筋通络", "indications": "中风后足部痉挛、足内翻",
-        "operation": "阳陵泉直刺1-1.5寸；三阴交直刺1-1.5寸；太冲直刺0.5-0.8寸",
-        "contraindications": "孕妇禁三阴交；痉挛严重时不宜强刺激" },
-      "relations": [ { "type": "uses", "target": "A:三阴交" }, { "type": "uses", "target": "A:太冲" } ] }
+    {
+      "id": "M:艾灸",
+      "name": "艾灸",
+      "icon": "🔥",
+      "searchText": "艾灸 灸法 艾条 温和灸 温阳 散寒",
+      "fields": {
+        "principle": "温经散寒，扶阳固脱",
+        "definition": "利用艾绒或艾条燃烧产生的温热及药力刺激穴位，以温通经络、调和气血。",
+        "introduction": "临床最常用的温热疗法之一，适应寒证、虚证、阳虚证。",
+        "indications": "虚寒证、阳虚证、风寒湿痹、痛经、腹泻、哮喘缓解期",
+        "contraindications": "孕妇腰骶腹部禁灸；高热、出血倾向、恶性肿瘤局部禁灸；皮肤破损禁灸",
+        "operation": "艾条温和灸 10-15 分钟/穴，雀啄灸 5-10 分钟/穴；隔姜灸 5-7 壮",
+        "reference": "《针灸学》第4版 P89"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:耳穴",
+      "name": "耳穴",
+      "icon": "👂",
+      "searchText": "耳穴 耳针 王不留行 贴压 耳豆",
+      "fields": {
+        "principle": "疏通经络，调节脏腑",
+        "definition": "在耳廓特定穴位上贴压或针刺，通过经络传导调整脏腑功能。",
+        "introduction": "无创、便捷、安全，尤其适合老年、儿童、疼痛敏感者。",
+        "indications": "失眠、焦虑、痛经、肥胖、慢性疼痛、内分泌失调",
+        "contraindications": "耳周皮肤破损/感染禁贴压；孕妇慎用内分泌、内生殖器穴",
+        "operation": "王不留行籽贴压，每穴每日按压 3 次，每次 1-2 分钟；耳尖可放血 3-5 滴",
+        "reference": "《耳穴国标 GB/T 13734》"
+      },
+      "relations": [
+        { "type": "uses", "target": "E:神门" },
+        { "type": "uses", "target": "E:交感" },
+        { "type": "uses", "target": "E:皮质下" }
+      ]
+    },
+    {
+      "id": "M:中药贴敷",
+      "name": "中药贴敷",
+      "icon": "🌿",
+      "searchText": "中药贴敷 穴位贴敷 三伏贴 冬病夏治",
+      "fields": {
+        "principle": "药物透皮，穴位刺激",
+        "definition": "将中药研末调糊，贴敷于穴位或患处，通过皮肤吸收和穴位刺激起效。",
+        "introduction": "分三伏贴、三九贴、日常贴敷；现代以三伏贴最常用。",
+        "indications": "咳喘、痹证、消化不良、痛经、失眠、鼻炎",
+        "contraindications": "皮肤破损/过敏禁敷；孕妇腰骶腹部禁敷；急性传染病禁敷",
+        "operation": "每次贴敷 4-6 小时，可根据皮肤反应调整；7-10 天 1 次",
+        "reference": "《中医外治学》"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:中药熨烫",
+      "name": "中药熨烫",
+      "icon": "♨️",
+      "searchText": "中药熨烫 中药热熨 药熨 烫熨",
+      "fields": {
+        "principle": "温热透达，药力渗透",
+        "definition": "将加热的中药包敷熨于患处或穴位，借温热之力使药力渗透。",
+        "introduction": "局部温热疗法，适合寒性、慢性疾病。",
+        "indications": "寒性腹痛、腰痛、痹证、痛经、腹胀",
+        "contraindications": "高热禁烫熨；孕妇腰骶腹部禁；皮肤破损禁；恶性肿瘤局部禁",
+        "operation": "温度 60-70℃，每次 20-30 分钟，避免烫伤",
+        "reference": "《中医外治学》"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:足浴",
+      "name": "足浴",
+      "icon": "🦶",
+      "searchText": "足浴 泡脚 中药泡脚 足疗",
+      "fields": {
+        "principle": "温通经络，引火归元",
+        "definition": "将双足浸泡于中药煎剂中，通过足部穴位和皮肤吸收起效。",
+        "introduction": "居家调理首选，安全便捷。",
+        "indications": "失眠、阳虚、痹证、痛经、高血压、糖尿病周围神经病变",
+        "contraindications": "糖尿病足禁；足部皮肤破损/感染禁；心衰、重度高血压慎用",
+        "operation": "水温 38-42℃，时间 20-30 分钟，微微汗出为度",
+        "reference": "《中医外治学》"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:刮痧",
+      "name": "刮痧",
+      "icon": "🪶",
+      "searchText": "刮痧 刮拭 出痧 经络刮痧",
+      "fields": {
+        "principle": "疏通经络，活血化瘀",
+        "definition": "用刮痧板蘸介质在体表刮拭，使皮肤出痧，达到疏通经络、调整气血之效。",
+        "introduction": "分补法、泻法、平补平泻；以出痧为度。",
+        "indications": "中暑、感冒、颈肩腰腿痛、气滞血瘀证",
+        "contraindications": "孕妇腰骶腹部禁；出血倾向、抗凝治疗者禁；皮肤破损禁；急性传染病禁",
+        "operation": "沿经络自上而下或由内向外刮拭，力度适中；3-5 天 1 次",
+        "reference": "《针灸学》第4版 P210"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:拔罐",
+      "name": "拔罐",
+      "icon": "🫙",
+      "searchText": "拔罐 火罐 留罐 走罐 刺络拔罐",
+      "fields": {
+        "principle": "通经活络，行气活血，消肿止痛",
+        "definition": "以罐为工具，利用负压吸附于体表，使局部皮肤充血或瘀血。",
+        "introduction": "分留罐、走罐、闪罐、刺络拔罐等多种操作。",
+        "indications": "风寒湿痹、腰痛、咳喘、腹痛、扭伤",
+        "contraindications": "孕妇腰骶胸胁腹部禁；出血倾向、抗凝禁；皮肤破损禁；急性传染病禁",
+        "operation": "留罐 10-15 分钟；走罐沿经络往返 3-5 次；每周 2-3 次",
+        "reference": "《针灸学》第4版 P215"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:皮内针",
+      "name": "皮内针",
+      "icon": "📍",
+      "searchText": "皮内针 揿针 埋针 皮下留针",
+      "fields": {
+        "principle": "持续刺激，巩固疗效",
+        "definition": "将特制小型针具固定于皮内或皮下，通过持续弱刺激起效。",
+        "introduction": "分颗粒型、揿钉型两种；适合需长期留针者。",
+        "indications": "失眠、慢性疼痛、面瘫、落枕、肩周炎",
+        "contraindications": "出血倾向、抗凝禁；皮肤破损/感染禁；孕妇腰骶腹部慎用",
+        "operation": "埋针 1-3 天，每日按压 2-3 次；2-3 次为一疗程",
+        "reference": "《针灸学》第4版 P198"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:蜡疗",
+      "name": "蜡疗",
+      "icon": "🕯️",
+      "searchText": "蜡疗 石蜡 石蜡疗法 温热疗法",
+      "fields": {
+        "principle": "温热渗透，软化瘢痕",
+        "definition": "利用加热熔化的石蜡作为温热介质，将热传导至人体局部。",
+        "introduction": "温热持久，保温时间长，适合慢性炎症和粘连。",
+        "indications": "慢性关节炎、腱鞘炎、软组织损伤、瘢痕粘连",
+        "contraindications": "高热禁；恶性肿瘤局部禁；皮肤破损/感染禁；糖尿病、心脏病、老年人慎用",
+        "operation": "蜡温 50-55℃，每次 20-30 分钟，避免烫伤",
+        "reference": "《物理治疗学》"
+      },
+      "relations": []
+    },
+    {
+      "id": "M:磁疗",
+      "name": "磁疗",
+      "icon": "🧲",
+      "searchText": "磁疗 磁片 磁场 磁石",
+      "fields": {
+        "principle": "磁场调节，通络止痛",
+        "definition": "利用恒定磁场或脉冲磁场作用于人体，调整生理功能。",
+        "introduction": "无创、安全，适合慢性疼痛和高血压辅助调理。",
+        "indications": "慢性疼痛、高血压、失眠、软组织损伤",
+        "contraindications": "体内有心脏起搏器者禁；孕妇腹部禁；出血倾向、恶性肿瘤局部禁",
+        "operation": "磁片贴敷 6-8 小时，或磁疗机局部治疗 20-30 分钟",
+        "reference": "《物理治疗学》"
+      },
+      "relations": []
+    }
   ]
 }
