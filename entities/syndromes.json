@@ -1,37 +1,1251 @@
 {
   "type": "syndrome",
-  "version": "2.0.0",
-  "displayName": "证型",
-  "icon": "🔥",
+  "version": "2.0.4",
   "entities": [
-    { "id": "T:中风-风痰阻络", "name": "中风·风痰阻络证", "icon": "🔥",
-      "searchText": "中风 风痰 阻络 偏瘫 半身不遂",
-      "fields": { "minScore": 12, "treatment": "祛风化痰，疏通经络", "definition": "风痰上扰，阻滞经络，气血运行不畅", "typical": "半身不遂、口眼歪斜、语言不利、肢体麻木",
-        "scoringRules": [ { "symptom": "S:半身不遂", "score": 12, "required": true }, { "symptom": "S:口眼歪斜", "score": 10 }, { "symptom": "S:语言不利", "score": 8 } ] },
-      "relations": [ { "type": "relatedTo", "target": "M:颞三针" }, { "type": "relatedTo", "target": "M:脑三针" } ] },
-
-    { "id": "T:颈痹-寒湿阻络", "name": "颈痹·寒湿阻络证", "icon": "🔥",
-      "searchText": "颈椎病 寒湿 颈痛 项强",
-      "fields": { "minScore": 10, "treatment": "散寒除湿，通络止痛", "definition": "寒湿之邪侵袭颈项，经络痹阻", "typical": "颈项强痛、遇寒加重、肩臂酸痛",
-        "scoringRules": [ { "symptom": "S:颈项强痛", "score": 12, "required": true }, { "symptom": "S:肩臂酸痛", "score": 8 }, { "symptom": "S:恶寒", "score": 6 } ] },
-      "relations": [ { "type": "relatedTo", "target": "M:颈三针" } ] },
-
-    { "id": "T:鼻鼽-肺气虚寒", "name": "鼻鼽·肺气虚寒证", "icon": "🔥",
-      "searchText": "过敏性鼻炎 鼻塞 流涕 肺气虚",
-      "fields": { "minScore": 10, "treatment": "温肺散寒，宣通鼻窍", "definition": "肺气虚弱，卫表不固，风寒乘虚而入", "typical": "鼻塞、流清涕、打喷嚏、遇风加重",
-        "scoringRules": [ { "symptom": "S:鼻塞", "score": 12, "required": true }, { "symptom": "S:流清涕", "score": 10 }, { "symptom": "S:打喷嚏", "score": 8 } ] },
-      "relations": [ { "type": "relatedTo", "target": "M:鼻三针" } ] },
-
-    { "id": "T:胃痛-脾胃虚寒", "name": "胃痛·脾胃虚寒证", "icon": "🔥",
-      "searchText": "胃痛 脾胃虚寒 胃脘冷痛",
-      "fields": { "minScore": 10, "treatment": "温中健脾，和胃止痛", "definition": "脾胃阳气不足，寒从内生", "typical": "胃脘冷痛、喜温喜按、食欲不振",
-        "scoringRules": [ { "symptom": "S:胃脘冷痛", "score": 12, "required": true }, { "symptom": "S:喜温喜按", "score": 10 }, { "symptom": "S:食欲不振", "score": 8 } ] },
-      "relations": [ { "type": "relatedTo", "target": "M:胃三针" } ] },
-
-    { "id": "T:不寐-心肾不交", "name": "不寐·心肾不交证", "icon": "🔥",
-      "searchText": "失眠 心肾不交 入睡困难",
-      "fields": { "minScore": 10, "treatment": "交通心肾，安神定志", "definition": "心火亢盛，肾水亏虚，水火不济", "typical": "入睡困难、多梦、腰膝酸软、心烦",
-        "scoringRules": [ { "symptom": "S:入睡困难", "score": 12, "required": true }, { "symptom": "S:多梦", "score": 8 }, { "symptom": "S:腰膝酸软", "score": 8 } ] },
-      "relations": [ { "type": "relatedTo", "target": "M:手智针" }, { "type": "relatedTo", "target": "M:四神针" } ] }
+    {
+      "id": "T:气虚证", "name": "气虚证", "icon": "🔥", "searchText": "气虚 神疲乏力 少气懒言",
+      "fields": {
+        "category": "气血津液", "treatment": "补益元气",
+        "definition": "元气不足，脏腑机能减退",
+        "typical": "神疲乏力、少气懒言、自汗",
+        "minScore": 10,
+        "preferTags": ["补气", "健脾", "和胃"],
+        "secondaryTags": ["补肺", "固摄"],
+        "scoringRules": [
+          { "symptom": "S:神疲乏力", "score": 12, "required": true },
+          { "symptom": "S:少气懒言", "score": 10 },
+          { "symptom": "S:自汗", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:血虚证", "name": "血虚证", "icon": "🔥", "searchText": "血虚 面色苍白 头晕",
+      "fields": {
+        "category": "气血津液", "treatment": "养血补血",
+        "definition": "血液亏虚，脏腑失养",
+        "typical": "面色苍白、头晕、心悸",
+        "minScore": 10,
+        "preferTags": ["补血", "活血", "养心"],
+        "secondaryTags": ["健脾", "安神"],
+        "scoringRules": [
+          { "symptom": "S:面色苍白", "score": 12, "required": true },
+          { "symptom": "S:头晕", "score": 10 },
+          { "symptom": "S:心悸", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:气血两虚证", "name": "气血两虚证", "icon": "🔥", "searchText": "气血两虚 神疲 面色苍白",
+      "fields": {
+        "category": "气血津液", "treatment": "益气养血",
+        "definition": "气虚与血虚同时存在",
+        "typical": "神疲乏力、面色苍白、头晕",
+        "minScore": 10,
+        "preferTags": ["补气", "补血", "健脾"],
+        "secondaryTags": ["养心", "和胃"],
+        "scoringRules": [
+          { "symptom": "S:神疲乏力", "score": 12, "required": true },
+          { "symptom": "S:面色苍白", "score": 12, "required": true },
+          { "symptom": "S:头晕", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:气滞证", "name": "气滞证", "icon": "🔥", "searchText": "气滞 胀痛 善太息",
+      "fields": {
+        "category": "气血津液", "treatment": "行气解郁",
+        "definition": "气机郁滞，运行不畅",
+        "typical": "胀痛、善太息、情绪抑郁",
+        "minScore": 10,
+        "preferTags": ["理气", "疏肝", "宽胸"],
+        "secondaryTags": ["和胃", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:胀痛", "score": 12, "required": true },
+          { "symptom": "S:善太息", "score": 10 },
+          { "symptom": "S:情绪抑郁", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:血瘀证", "name": "血瘀证", "icon": "🔥", "searchText": "血瘀 刺痛 痛有定处",
+      "fields": {
+        "category": "气血津液", "treatment": "活血化瘀",
+        "definition": "瘀血内阻，血行不畅",
+        "typical": "刺痛、痛有定处、面色晦暗",
+        "minScore": 10,
+        "preferTags": ["活血", "通络", "止痛"],
+        "secondaryTags": ["理气", "调经"],
+        "scoringRules": [
+          { "symptom": "S:刺痛", "score": 12, "required": true },
+          { "symptom": "S:痛有定处", "score": 10 },
+          { "symptom": "S:面色晦暗", "score": 8 },
+          { "symptom": "S:皮下瘀斑", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:拔罐" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:水湿内停证", "name": "水湿内停证", "icon": "🔥", "searchText": "水湿内停 水肿 身体困重",
+      "fields": {
+        "category": "气血津液", "treatment": "利水渗湿",
+        "definition": "水湿停聚，泛溢肌肤",
+        "typical": "水肿、身体困重、小便不利",
+        "minScore": 10,
+        "preferTags": ["利水", "祛湿", "健脾"],
+        "secondaryTags": ["温阳", "通络"],
+        "scoringRules": [
+          { "symptom": "S:水肿", "score": 12, "required": true },
+          { "symptom": "S:身体困重", "score": 10 },
+          { "symptom": "S:小便不利", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:心脾两虚证", "name": "心脾两虚证", "icon": "🔥", "searchText": "心脾两虚 心悸 失眠 食欲不振",
+      "fields": {
+        "category": "气血津液", "treatment": "补益心脾",
+        "definition": "心血不足，脾气虚弱",
+        "typical": "心悸、失眠、食欲不振",
+        "minScore": 10,
+        "preferTags": ["补气", "补血", "养心"],
+        "secondaryTags": ["健脾", "安神"],
+        "scoringRules": [
+          { "symptom": "S:心悸", "score": 12, "required": true },
+          { "symptom": "S:失眠", "score": 10 },
+          { "symptom": "S:食欲不振", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:心气虚证", "name": "心气虚证", "icon": "🔥", "searchText": "心气虚 心悸 神疲",
+      "fields": {
+        "category": "脏腑", "treatment": "补益心气",
+        "definition": "心气不足，鼓动无力",
+        "typical": "心悸、神疲乏力、自汗",
+        "minScore": 10,
+        "preferTags": ["养心", "补气", "安神"],
+        "secondaryTags": ["补血", "通脉"],
+        "scoringRules": [
+          { "symptom": "S:心悸", "score": 12, "required": true },
+          { "symptom": "S:神疲乏力", "score": 10 },
+          { "symptom": "S:自汗", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:心血虚证", "name": "心血虚证", "icon": "🔥", "searchText": "心血虚 心悸 失眠",
+      "fields": {
+        "category": "脏腑", "treatment": "养血安神",
+        "definition": "心血亏虚，心神失养",
+        "typical": "心悸、失眠、多梦、面色苍白",
+        "minScore": 10,
+        "preferTags": ["补血", "养心", "安神"],
+        "secondaryTags": ["健脾", "通脉"],
+        "scoringRules": [
+          { "symptom": "S:心悸", "score": 12, "required": true },
+          { "symptom": "S:失眠", "score": 10 },
+          { "symptom": "S:多梦", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:艾灸" }
+      ]
+    },
+    {
+      "id": "T:心火亢盛证", "name": "心火亢盛证", "icon": "🔥", "searchText": "心火 口舌生疮 心烦",
+      "fields": {
+        "category": "脏腑", "treatment": "清心泻火",
+        "definition": "心火炽盛，扰乱心神",
+        "typical": "口舌生疮、心烦、小便黄",
+        "minScore": 10,
+        "preferTags": ["清心", "泻火", "安神"],
+        "secondaryTags": ["清热", "利咽"],
+        "scoringRules": [
+          { "symptom": "S:口舌生疮", "score": 12, "required": true },
+          { "symptom": "S:心烦", "score": 10 },
+          { "symptom": "S:小便黄", "score": 8 },
+          { "symptom": "S:小儿夜啼", "score": 8 },
+          { "symptom": "S:小儿指纹紫滞", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:心血瘀阻证", "name": "心血瘀阻证", "icon": "🔥", "searchText": "心血瘀阻 胸痛 心悸",
+      "fields": {
+        "category": "脏腑", "treatment": "活血化瘀，通脉止痛",
+        "definition": "瘀血阻滞心脉",
+        "typical": "胸痛、心悸、痛有定处",
+        "minScore": 10,
+        "preferTags": ["活血", "通脉", "止痛"],
+        "secondaryTags": ["宽胸", "理气"],
+        "scoringRules": [
+          { "symptom": "S:胸痛", "score": 12, "required": true },
+          { "symptom": "S:心悸", "score": 10 },
+          { "symptom": "S:痛有定处", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:心肾不交证", "name": "心肾不交证", "icon": "🔥", "searchText": "心肾不交 失眠 腰膝酸软",
+      "fields": {
+        "category": "脏腑", "treatment": "交通心肾",
+        "definition": "心火亢盛，肾水亏虚",
+        "typical": "失眠、多梦、腰膝酸软",
+        "minScore": 10,
+        "preferTags": ["安神", "滋阴", "补肾"],
+        "secondaryTags": ["交通心肾", "养心"],
+        "scoringRules": [
+          { "symptom": "S:失眠", "score": 12, "required": true },
+          { "symptom": "S:多梦", "score": 10 },
+          { "symptom": "S:腰膝酸软", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:肺气虚证", "name": "肺气虚证", "icon": "🔥", "searchText": "肺气虚 咳嗽 气短",
+      "fields": {
+        "category": "脏腑", "treatment": "补益肺气",
+        "definition": "肺气不足，卫外不固",
+        "typical": "咳嗽、少气懒言、自汗",
+        "minScore": 10,
+        "preferTags": ["补肺", "补气", "宣肺"],
+        "secondaryTags": ["健脾", "止咳"],
+        "scoringRules": [
+          { "symptom": "S:咳嗽", "score": 12, "required": true },
+          { "symptom": "S:少气懒言", "score": 10 },
+          { "symptom": "S:自汗", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:肺阴虚证", "name": "肺阴虚证", "icon": "🔥", "searchText": "肺阴虚 干咳 痰少",
+      "fields": {
+        "category": "脏腑", "treatment": "滋阴润肺",
+        "definition": "肺阴不足，虚热内生",
+        "typical": "干咳、痰少难咳、咽干",
+        "minScore": 10,
+        "preferTags": ["滋阴", "补肺", "清热"],
+        "secondaryTags": ["止咳", "利咽"],
+        "scoringRules": [
+          { "symptom": "S:痰少难咳", "score": 12, "required": true },
+          { "symptom": "S:咽干", "score": 10 },
+          { "symptom": "S:盗汗", "score": 8 },
+          { "symptom": "S:潮热", "score": 8 },
+          { "symptom": "S:皮肤干燥", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:风寒束肺证", "name": "风寒束肺证", "icon": "🔥", "searchText": "风寒束肺 咳嗽 恶寒",
+      "fields": {
+        "category": "脏腑", "treatment": "疏风散寒，宣肺止咳",
+        "definition": "风寒袭肺，肺气失宣",
+        "typical": "咳嗽、恶寒、流清涕",
+        "minScore": 10,
+        "preferTags": ["宣肺", "解表", "祛风"],
+        "secondaryTags": ["止咳", "平喘"],
+        "scoringRules": [
+          { "symptom": "S:咳嗽", "score": 12, "required": true },
+          { "symptom": "S:恶寒", "score": 10 },
+          { "symptom": "S:流鼻涕", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:风热犯肺证", "name": "风热犯肺证", "icon": "🔥", "searchText": "风热犯肺 咳嗽 发热",
+      "fields": {
+        "category": "脏腑", "treatment": "疏风清热，宣肺止咳",
+        "definition": "风热袭肺，肺失清肃",
+        "typical": "咳嗽、发热、咽痛",
+        "minScore": 10,
+        "preferTags": ["清热", "解表", "宣肺"],
+        "secondaryTags": ["止咳", "利咽"],
+        "scoringRules": [
+          { "symptom": "S:咳嗽", "score": 12, "required": true },
+          { "symptom": "S:发热", "score": 10 },
+          { "symptom": "S:咽痛", "score": 8 },
+          { "symptom": "S:咳痰黄稠", "score": 8 },
+          { "symptom": "S:咽痒", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:刮痧" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:痰浊阻肺证", "name": "痰浊阻肺证", "icon": "🔥", "searchText": "痰浊阻肺 咳痰 胸闷",
+      "fields": {
+        "category": "脏腑", "treatment": "燥湿化痰",
+        "definition": "痰浊壅阻肺气",
+        "typical": "咳痰白稀、胸闷、气喘",
+        "minScore": 10,
+        "preferTags": ["化痰", "祛湿", "止咳"],
+        "secondaryTags": ["宣肺", "平喘"],
+        "scoringRules": [
+          { "symptom": "S:咳痰白稀", "score": 12, "required": true },
+          { "symptom": "S:胸闷", "score": 10 },
+          { "symptom": "S:气喘", "score": 8 },
+          { "symptom": "S:喘息", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:拔罐" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:脾气虚证", "name": "脾气虚证", "icon": "🔥", "searchText": "脾气虚 食欲不振 便溏",
+      "fields": {
+        "category": "脏腑", "treatment": "健脾益气",
+        "definition": "脾气不足，运化失健",
+        "typical": "食欲不振、便溏、腹胀",
+        "minScore": 10,
+        "preferTags": ["健脾", "补气", "和胃"],
+        "secondaryTags": ["利湿", "止泻"],
+        "scoringRules": [
+          { "symptom": "S:食欲不振", "score": 12, "required": true },
+          { "symptom": "S:便溏", "score": 10 },
+          { "symptom": "S:神疲乏力", "score": 8 },
+          { "symptom": "S:带下清稀", "score": 6 },
+          { "symptom": "S:面色萎黄", "score": 8 },
+          { "symptom": "S:食后腹胀", "score": 8 },
+          { "symptom": "S:便血", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药熨烫" }
+      ]
+    },
+    {
+      "id": "T:脾阳虚证", "name": "脾阳虚证", "icon": "🔥", "searchText": "脾阳虚 胃脘冷痛 便溏",
+      "fields": {
+        "category": "脏腑", "treatment": "温中健脾",
+        "definition": "脾阳不足，虚寒内生",
+        "typical": "胃脘冷痛、便溏、畏寒肢冷",
+        "minScore": 10,
+        "preferTags": ["温阳", "健脾", "和胃"],
+        "secondaryTags": ["止泻", "利水"],
+        "scoringRules": [
+          { "symptom": "S:胃脘冷痛", "score": 12, "required": true },
+          { "symptom": "S:便溏", "score": 10 },
+          { "symptom": "S:畏寒肢冷", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:寒湿困脾证", "name": "寒湿困脾证", "icon": "🔥", "searchText": "寒湿困脾 腹胀 身体困重",
+      "fields": {
+        "category": "脏腑", "treatment": "温中化湿",
+        "definition": "寒湿内盛，困阻脾阳",
+        "typical": "腹胀、身体困重、食欲不振",
+        "minScore": 10,
+        "preferTags": ["温中化湿", "健脾", "和胃"],
+        "secondaryTags": ["燥湿", "止泻"],
+        "scoringRules": [
+          { "symptom": "S:腹胀", "score": 12, "required": true },
+          { "symptom": "S:身体困重", "score": 10 },
+          { "symptom": "S:食欲不振", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" }
+      ]
+    },
+    {
+      "id": "T:脾胃湿热证", "name": "脾胃湿热证", "icon": "🔥", "searchText": "脾胃湿热 口苦 小便黄",
+      "fields": {
+        "category": "脏腑", "treatment": "清热化湿",
+        "definition": "湿热蕴结脾胃",
+        "typical": "口苦、小便黄、胃脘胀痛",
+        "minScore": 10,
+        "preferTags": ["清热", "化湿", "和胃"],
+        "secondaryTags": ["理气", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:口苦", "score": 12, "required": true },
+          { "symptom": "S:小便黄", "score": 10 },
+          { "symptom": "S:胃脘胀痛", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:胃火炽盛证", "name": "胃火炽盛证", "icon": "🔥", "searchText": "胃火 牙痛 口臭",
+      "fields": {
+        "category": "脏腑", "treatment": "清胃泻火",
+        "definition": "胃火亢盛，灼伤津液",
+        "typical": "牙痛、口臭、便秘",
+        "minScore": 10,
+        "preferTags": ["清胃", "泻火", "止痛"],
+        "secondaryTags": ["通便", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:牙痛", "score": 12, "required": true },
+          { "symptom": "S:口臭", "score": 10 },
+          { "symptom": "S:便秘", "score": 8 },
+          { "symptom": "S:呃逆", "score": 8 },
+          { "symptom": "S:胃痛", "score": 8 },
+          { "symptom": "S:呕吐", "score": 8 },
+          { "symptom": "S:反酸", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:胃阴虚证", "name": "胃阴虚证", "icon": "🔥", "searchText": "胃阴虚 胃脘灼痛 口干",
+      "fields": {
+        "category": "脏腑", "treatment": "滋阴养胃",
+        "definition": "胃阴不足，虚热内生",
+        "typical": "胃脘灼痛、口干、便秘",
+        "minScore": 10,
+        "preferTags": ["滋阴", "和胃", "清热"],
+        "secondaryTags": ["生津", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:胃脘灼痛", "score": 12, "required": true },
+          { "symptom": "S:口干", "score": 10 },
+          { "symptom": "S:便秘", "score": 8 },
+          { "symptom": "S:灼痛", "score": 8 },
+          { "symptom": "S:胃痛", "score": 8 },
+          { "symptom": "S:呕吐", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:肝气郁结证", "name": "肝气郁结证", "icon": "🔥", "searchText": "肝气郁结 胸胁胀痛 善太息",
+      "fields": {
+        "category": "脏腑", "treatment": "疏肝解郁",
+        "definition": "肝失疏泄，气机郁滞",
+        "typical": "胸胁胀痛、善太息、情绪抑郁",
+        "minScore": 10,
+        "preferTags": ["疏肝", "理气", "解郁"],
+        "secondaryTags": ["和胃", "宽胸"],
+        "scoringRules": [
+          { "symptom": "S:胸胁胀痛", "score": 12, "required": true },
+          { "symptom": "S:善太息", "score": 10 },
+          { "symptom": "S:情绪抑郁", "score": 10 },
+          { "symptom": "S:反酸", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" },
+        { "type": "recommends", "target": "M:拔罐" }
+      ]
+    },
+    {
+      "id": "T:肝火上炎证", "name": "肝火上炎证", "icon": "🔥", "searchText": "肝火上炎 面红目赤 口苦",
+      "fields": {
+        "category": "脏腑", "treatment": "清肝泻火",
+        "definition": "肝火循经上炎",
+        "typical": "面红目赤、口苦、烦躁",
+        "minScore": 10,
+        "preferTags": ["清肝", "泻火", "平肝"],
+        "secondaryTags": ["明目", "清热"],
+        "scoringRules": [
+          { "symptom": "S:面红目赤", "score": 12, "required": true },
+          { "symptom": "S:口苦", "score": 10 },
+          { "symptom": "S:烦躁", "score": 10 },
+          { "symptom": "S:头痛", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:肝阳上亢证", "name": "肝阳上亢证", "icon": "🔥", "searchText": "肝阳上亢 头晕 面红目赤",
+      "fields": {
+        "category": "脏腑", "treatment": "平肝潜阳",
+        "definition": "肝肾阴虚，肝阳上亢",
+        "typical": "头晕、面红目赤、腰膝酸软",
+        "minScore": 10,
+        "preferTags": ["平肝", "潜阳", "滋阴"],
+        "secondaryTags": ["安神", "明目"],
+        "scoringRules": [
+          { "symptom": "S:头晕", "score": 12, "required": true },
+          { "symptom": "S:面红目赤", "score": 10 },
+          { "symptom": "S:腰膝酸软", "score": 8 },
+          { "symptom": "S:头痛", "score": 8 },
+          { "symptom": "S:耳鸣", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:足浴" },
+        { "type": "recommends", "target": "M:磁疗" }
+      ]
+    },
+    {
+      "id": "T:肝血虚证", "name": "肝血虚证", "icon": "🔥", "searchText": "肝血虚 头晕 目涩",
+      "fields": {
+        "category": "脏腑", "treatment": "补肝养血",
+        "definition": "肝血不足，目失所养",
+        "typical": "头晕、目涩、月经量少",
+        "minScore": 10,
+        "preferTags": ["补血", "养肝", "明目"],
+        "secondaryTags": ["安神", "调经"],
+        "scoringRules": [
+          { "symptom": "S:头晕", "score": 12, "required": true },
+          { "symptom": "S:目涩", "score": 10 },
+          { "symptom": "S:月经量少", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:肝胆湿热证", "name": "肝胆湿热证", "icon": "🔥", "searchText": "肝胆湿热 胸胁胀痛 口苦",
+      "fields": {
+        "category": "脏腑", "treatment": "清利肝胆湿热",
+        "definition": "湿热蕴结肝胆",
+        "typical": "胸胁胀痛、口苦、黄疸",
+        "minScore": 10,
+        "preferTags": ["清肝", "利湿", "泻火"],
+        "secondaryTags": ["疏肝", "清热"],
+        "scoringRules": [
+          { "symptom": "S:胸胁胀痛", "score": 12, "required": true },
+          { "symptom": "S:口苦", "score": 10 },
+          { "symptom": "S:黄疸", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:肾阳虚证", "name": "肾阳虚证", "icon": "🔥", "searchText": "肾阳虚 腰膝酸软 畏寒肢冷",
+      "fields": {
+        "category": "脏腑", "treatment": "温补肾阳",
+        "definition": "肾阳不足，温煦失职",
+        "typical": "腰膝酸软、畏寒肢冷、夜尿多",
+        "minScore": 10,
+        "preferTags": ["温阳", "补肾", "利水"],
+        "secondaryTags": ["固摄", "调经"],
+        "scoringRules": [
+          { "symptom": "S:腰膝酸软", "score": 12, "required": true },
+          { "symptom": "S:畏寒肢冷", "score": 12, "required": true },
+          { "symptom": "S:夜尿多", "score": 10 },
+          { "symptom": "S:腰痛", "score": 8 },
+          { "symptom": "S:阳痿", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:肾阴虚证", "name": "肾阴虚证", "icon": "🔥", "searchText": "肾阴虚 腰膝酸软 五心烦热",
+      "fields": {
+        "category": "脏腑", "treatment": "滋补肾阴",
+        "definition": "肾阴亏虚，虚热内生",
+        "typical": "腰膝酸软、五心烦热、盗汗",
+        "minScore": 10,
+        "preferTags": ["滋阴", "补肾", "养肝"],
+        "secondaryTags": ["清热", "安神"],
+        "scoringRules": [
+          { "symptom": "S:腰膝酸软", "score": 12, "required": true },
+          { "symptom": "S:五心烦热", "score": 10 },
+          { "symptom": "S:盗汗", "score": 10 },
+          { "symptom": "S:潮热", "score": 8 },
+          { "symptom": "S:耳鸣", "score": 8 },
+          { "symptom": "S:腰痛", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:肾气不固证", "name": "肾气不固证", "icon": "🔥", "searchText": "肾气不固 尿频 遗精",
+      "fields": {
+        "category": "脏腑", "treatment": "固摄肾气",
+        "definition": "肾气亏虚，固摄无权",
+        "typical": "尿频、遗精、夜尿多",
+        "minScore": 10,
+        "preferTags": ["补肾", "固摄", "缩尿"],
+        "secondaryTags": ["温阳", "止遗"],
+        "scoringRules": [
+          { "symptom": "S:尿频", "score": 12, "required": true },
+          { "symptom": "S:夜尿多", "score": 10 },
+          { "symptom": "S:遗精", "score": 10 },
+          { "symptom": "S:遗尿", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:肾虚水泛证", "name": "肾虚水泛证", "icon": "🔥", "searchText": "肾虚水泛 水肿 腰膝酸软",
+      "fields": {
+        "category": "脏腑", "treatment": "温肾利水",
+        "definition": "肾阳亏虚，水湿泛滥",
+        "typical": "水肿、腰膝酸软、尿少",
+        "minScore": 10,
+        "preferTags": ["温阳", "补肾", "利水"],
+        "secondaryTags": ["通络", "渗湿"],
+        "scoringRules": [
+          { "symptom": "S:水肿", "score": 12, "required": true },
+          { "symptom": "S:腰膝酸软", "score": 10 },
+          { "symptom": "S:尿少", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:膀胱湿热证", "name": "膀胱湿热证", "icon": "🔥", "searchText": "膀胱湿热 尿频 尿急 尿痛",
+      "fields": {
+        "category": "脏腑", "treatment": "清热利湿",
+        "definition": "湿热蕴结膀胱",
+        "typical": "尿频、尿急、尿痛",
+        "minScore": 10,
+        "preferTags": ["清热", "利湿", "利水"],
+        "secondaryTags": ["通淋", "和胃"],
+        "scoringRules": [
+          { "symptom": "S:尿频", "score": 12, "required": true },
+          { "symptom": "S:尿急", "score": 10 },
+          { "symptom": "S:尿痛", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:脾肾阳虚证", "name": "脾肾阳虚证", "icon": "🔥", "searchText": "脾肾阳虚 畏寒肢冷 便溏",
+      "fields": {
+        "category": "脏腑", "treatment": "温补脾肾",
+        "definition": "脾肾阳气亏虚",
+        "typical": "畏寒肢冷、便溏、腰膝酸软",
+        "minScore": 10,
+        "preferTags": ["温阳", "健脾", "补肾"],
+        "secondaryTags": ["止泻", "利水"],
+        "scoringRules": [
+          { "symptom": "S:畏寒肢冷", "score": 12, "required": true },
+          { "symptom": "S:便溏", "score": 10 },
+          { "symptom": "S:腰膝酸软", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:肝郁脾虚证", "name": "肝郁脾虚证", "icon": "🔥", "searchText": "肝郁脾虚 胸胁胀痛 便溏",
+      "fields": {
+        "category": "脏腑", "treatment": "疏肝健脾",
+        "definition": "肝郁气滞，脾失健运",
+        "typical": "胸胁胀痛、便溏、情绪抑郁",
+        "minScore": 10,
+        "preferTags": ["疏肝", "健脾", "解郁"],
+        "secondaryTags": ["和胃", "理气"],
+        "scoringRules": [
+          { "symptom": "S:胸胁胀痛", "score": 12, "required": true },
+          { "symptom": "S:便溏", "score": 10 },
+          { "symptom": "S:情绪抑郁", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:艾灸" }
+      ]
+    },
+    {
+      "id": "T:风寒湿痹证", "name": "风寒湿痹证", "icon": "🔥", "searchText": "风寒湿痹 关节冷痛 畏寒",
+      "fields": {
+        "category": "经络肢体", "treatment": "祛风散寒，除湿通络",
+        "definition": "风寒湿邪闭阻经络",
+        "typical": "关节冷痛、畏寒肢冷、痛有定处",
+        "minScore": 10,
+        "preferTags": ["祛风", "通络", "止痛"],
+        "secondaryTags": ["温阳", "活血"],
+        "scoringRules": [
+          { "symptom": "S:冷痛", "score": 12, "required": true },
+          { "symptom": "S:畏寒肢冷", "score": 10 },
+          { "symptom": "S:痛有定处", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" },
+        { "type": "recommends", "target": "M:拔罐" }
+      ]
+    },
+    {
+      "id": "T:风痰阻络证", "name": "风痰阻络证", "icon": "🔥", "searchText": "风痰阻络 中风 口眼歪斜",
+      "fields": {
+        "category": "经络肢体", "treatment": "祛风化痰，通络",
+        "definition": "风痰上扰，阻滞经络",
+        "typical": "头晕、口眼歪斜、肢体麻木",
+        "minScore": 10,
+        "preferTags": ["祛风", "化痰", "通络"],
+        "secondaryTags": ["安神", "开窍"],
+        "scoringRules": [
+          { "symptom": "S:头晕", "score": 12, "required": true },
+          { "symptom": "S:头重如裹", "score": 10 },
+          { "symptom": "S:咳嗽痰多", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:颈痹-寒湿阻络", "name": "颈痹·寒湿阻络证", "icon": "🔥", "searchText": "颈椎病 寒湿 颈痛",
+      "fields": {
+        "category": "经络肢体", "treatment": "散寒除湿，通络止痛",
+        "definition": "寒湿侵袭颈项",
+        "typical": "颈项强痛、肩臂酸痛",
+        "minScore": 10,
+        "preferTags": ["通络", "止痛", "祛风"],
+        "secondaryTags": ["温阳", "散寒"],
+        "scoringRules": [
+          { "symptom": "S:颈项强痛", "score": 12, "required": true },
+          { "symptom": "S:肩臂酸痛", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:拔罐" }
+      ]
+    },
+    {
+      "id": "T:消渴-肺热津伤", "name": "消渴·肺热津伤证", "icon": "🔥", "searchText": "消渴 肺热 多饮 烦渴",
+      "fields": {
+        "category": "专科", "treatment": "清热润肺，生津止渴",
+        "definition": "肺热炽盛，津液耗伤",
+        "typical": "烦渴多饮、口干舌燥",
+        "minScore": 10,
+        "preferTags": ["清热", "生津", "润肺"],
+        "secondaryTags": ["止渴", "养阴"],
+        "scoringRules": [
+          { "symptom": "S:烦渴多饮", "score": 12, "required": true },
+          { "symptom": "S:口干", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:消渴-胃热炽盛", "name": "消渴·胃热炽盛证", "icon": "🔥", "searchText": "消渴 胃热 多食 易饥",
+      "fields": {
+        "category": "专科", "treatment": "清胃泻火，养阴生津",
+        "definition": "胃火炽盛，耗伤津液",
+        "typical": "多食易饥、口渴",
+        "minScore": 10,
+        "preferTags": ["清胃", "泻火", "生津"],
+        "secondaryTags": ["养阴", "止渴"],
+        "scoringRules": [
+          { "symptom": "S:多食易饥", "score": 12, "required": true },
+          { "symptom": "S:口干", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:消渴-肾阴亏虚", "name": "消渴·肾阴亏虚证", "icon": "🔥", "searchText": "消渴 肾虚 尿多 腰酸",
+      "fields": {
+        "category": "专科", "treatment": "滋阴固肾",
+        "definition": "肾阴亏虚，固摄失职",
+        "typical": "尿多、腰膝酸软",
+        "minScore": 10,
+        "preferTags": ["滋阴", "补肾", "固摄"],
+        "secondaryTags": ["缩尿", "养肝"],
+        "scoringRules": [
+          { "symptom": "S:尿多", "score": 12, "required": true },
+          { "symptom": "S:腰膝酸软", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:足浴" }
+      ]
+    },
+    {
+      "id": "T:胸痹-心血瘀阻", "name": "胸痹·心血瘀阻证", "icon": "🔥", "searchText": "胸痹 胸痛彻背",
+      "fields": {
+        "category": "专科", "treatment": "活血化瘀，通脉止痛",
+        "definition": "瘀血阻滞心脉",
+        "typical": "胸痛彻背、痛有定处",
+        "minScore": 10,
+        "preferTags": ["活血", "通脉", "止痛"],
+        "secondaryTags": ["宽胸", "理气"],
+        "scoringRules": [
+          { "symptom": "S:胸痛彻背", "score": 12, "required": true },
+          { "symptom": "S:痛有定处", "score": 10 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:泄泻-湿热伤中", "name": "泄泻·湿热伤中证", "icon": "🔥", "searchText": "泄泻 湿热 里急后重",
+      "fields": {
+        "category": "专科", "treatment": "清热利湿，分利止泻",
+        "definition": "湿热壅滞，传化失常",
+        "typical": "腹痛、里急后重、便溏",
+        "minScore": 10,
+        "preferTags": ["清热", "利湿", "止泻"],
+        "secondaryTags": ["和胃", "导滞"],
+        "scoringRules": [
+          { "symptom": "S:便溏", "score": 12, "required": true },
+          { "symptom": "S:里急后重", "score": 10 },
+          { "symptom": "S:口苦", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:艾灸" }
+      ]
+    },
+    {
+      "id": "T:便秘-热秘", "name": "便秘·热秘证", "icon": "🔥", "searchText": "便秘 热秘 口臭",
+      "fields": {
+        "category": "专科", "treatment": "泻热导滞，润肠通便",
+        "definition": "肠腑燥热，津伤便结",
+        "typical": "便秘、口臭、小便黄",
+        "minScore": 10,
+        "preferTags": ["通便", "导滞", "清热"],
+        "secondaryTags": ["降逆", "泻火"],
+        "scoringRules": [
+          { "symptom": "S:便秘", "score": 12, "required": true },
+          { "symptom": "S:口臭", "score": 10 },
+          { "symptom": "S:小便黄", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:乳癖-肝郁痰凝", "name": "乳癖·肝郁痰凝证", "icon": "🔥", "searchText": "乳癖 乳腺增生 乳房胀痛",
+      "fields": {
+        "category": "专科", "treatment": "疏肝解郁，化痰散结",
+        "definition": "肝郁气滞，痰浊凝结",
+        "typical": "乳房胀痛、乳房肿块",
+        "minScore": 10,
+        "preferTags": ["疏肝", "化痰", "散结消肿"],
+        "secondaryTags": ["理气", "解郁"],
+        "scoringRules": [
+          { "symptom": "S:乳房胀痛", "score": 12, "required": true },
+          { "symptom": "S:乳房肿块", "score": 12, "required": true },
+          { "symptom": "S:情绪抑郁", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:湿疮-湿热浸淫", "name": "湿疮·湿热浸淫证", "icon": "🔥", "searchText": "湿疮 湿疹 瘙痒",
+      "fields": {
+        "category": "专科", "treatment": "清热利湿，祛风止痒",
+        "definition": "湿热浸淫肌肤",
+        "typical": "皮肤瘙痒、丘疹、局部红肿",
+        "minScore": 10,
+        "preferTags": ["清热", "利湿", "祛风"],
+        "secondaryTags": ["止痒", "消肿"],
+        "scoringRules": [
+          { "symptom": "S:皮肤瘙痒", "score": 12, "required": true },
+          { "symptom": "S:丘疹", "score": 10 },
+          { "symptom": "S:局部红肿", "score": 8 },
+          { "symptom": "S:风团", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:鼻鼽-肺气虚寒", "name": "鼻鼽·肺气虚寒证", "icon": "🔥", "searchText": "过敏性鼻炎 肺气虚寒 鼻塞 流清涕",
+      "fields": {
+        "category": "专科", "treatment": "温肺散寒，宣通鼻窍",
+        "definition": "肺气虚弱，卫表不固，风寒乘虚而入",
+        "typical": "鼻塞、流清涕、打喷嚏、遇风加重",
+        "minScore": 10,
+        "preferTags": ["补肺", "散寒", "通窍"],
+        "secondaryTags": ["宣通鼻窍", "固表"],
+        "scoringRules": [
+          { "symptom": "S:鼻塞", "score": 12, "required": true },
+          { "symptom": "S:流鼻涕", "score": 10 },
+          { "symptom": "S:打喷嚏", "score": 8 },
+          { "symptom": "S:恶寒", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药贴敷" }
+      ]
+    },
+    {
+      "id": "T:小儿食积-乳食内积", "name": "小儿食积·乳食内积证", "icon": "🔥", "searchText": "小儿食积 腹胀 食欲不振",
+      "fields": {
+        "category": "专科", "treatment": "消食导滞",
+        "definition": "乳食停滞，脾胃受损",
+        "typical": "腹胀、食欲不振、呕吐",
+        "minScore": 10,
+        "preferTags": ["消食", "导滞", "和胃"],
+        "secondaryTags": ["健脾", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:腹胀", "score": 12, "required": true },
+          { "symptom": "S:食欲不振", "score": 10 },
+          { "symptom": "S:恶心呕吐", "score": 8 },
+          { "symptom": "S:呃逆", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:艾灸" }
+      ]
+    },
+    {
+      "id": "T:小儿遗尿-肾气不足", "name": "小儿遗尿·肾气不足证", "icon": "🔥", "searchText": "小儿遗尿 肾气不足 尿床",
+      "fields": {
+        "category": "专科", "treatment": "温补肾阳，固涩小便",
+        "definition": "肾气不足，膀胱失约",
+        "typical": "遗尿、夜尿多、腰膝酸软",
+        "minScore": 10,
+        "preferTags": ["补肾", "缩尿", "温阳"],
+        "secondaryTags": ["固摄", "止遗"],
+        "scoringRules": [
+          { "symptom": "S:遗尿", "score": 12, "required": true },
+          { "symptom": "S:夜尿多", "score": 10 },
+          { "symptom": "S:腰膝酸软", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:小儿夜啼-心经积热", "name": "小儿夜啼·心经积热证", "icon": "🔥", "searchText": "小儿夜啼 心热 烦躁",
+      "fields": {
+        "category": "专科", "treatment": "清心导赤，泻火安神",
+        "definition": "心经积热，内扰心神",
+        "typical": "小儿夜啼、烦躁、小便黄",
+        "minScore": 10,
+        "preferTags": ["清心", "泻火", "安神"],
+        "secondaryTags": ["清热", "定志"],
+        "scoringRules": [
+          { "symptom": "S:小儿夜啼", "score": 12, "required": true },
+          { "symptom": "S:烦躁", "score": 10 },
+          { "symptom": "S:小便黄", "score": 8 },
+          { "symptom": "S:小儿指纹紫滞", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:不孕症-肾虚", "name": "不孕症·肾虚证", "icon": "🔥", "searchText": "不孕 肾虚 腰酸",
+      "fields": {
+        "category": "专科", "treatment": "补肾益气，温养冲任",
+        "definition": "肾虚冲任虚衰，不能摄精成孕",
+        "typical": "久不受孕、腰膝酸软、月经不调",
+        "minScore": 10,
+        "preferTags": ["补肾", "温阳", "调经"],
+        "secondaryTags": ["固摄", "利水"],
+        "scoringRules": [
+          { "symptom": "S:腰膝酸软", "score": 12, "required": true },
+          { "symptom": "S:月经后期", "score": 10 },
+          { "symptom": "S:头晕", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:中药熨烫" }
+      ]
+    },
+    {
+      "id": "T:不孕症-肝郁", "name": "不孕症·肝郁证", "icon": "🔥", "searchText": "不孕 肝郁 情绪抑郁",
+      "fields": {
+        "category": "专科", "treatment": "疏肝解郁，理血调经",
+        "definition": "肝气郁结，气血失调",
+        "typical": "久不受孕、情绪抑郁、胸胁胀痛",
+        "minScore": 10,
+        "preferTags": ["疏肝", "解郁", "调经"],
+        "secondaryTags": ["理气", "和胃"],
+        "scoringRules": [
+          { "symptom": "S:情绪抑郁", "score": 12, "required": true },
+          { "symptom": "S:胸胁胀痛", "score": 10 },
+          { "symptom": "S:善太息", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:胎动不安-气血虚弱", "name": "胎动不安·气血虚弱证", "icon": "🔥", "searchText": "胎动不安 气血虚 腰酸腹坠",
+      "fields": {
+        "category": "专科", "treatment": "补气养血，固肾安胎",
+        "definition": "气血虚弱，胎失所养",
+        "typical": "腰酸腹坠、阴道出血、神疲乏力",
+        "minScore": 10,
+        "preferTags": ["补气", "补血", "安胎"],
+        "secondaryTags": ["固摄", "补肾"],
+        "scoringRules": [
+          { "symptom": "S:腰酸腹坠", "score": 12, "required": true },
+          { "symptom": "S:阴道出血", "score": 10 },
+          { "symptom": "S:神疲乏力", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:产后腹痛-血虚", "name": "产后腹痛·血虚证", "icon": "🔥", "searchText": "产后腹痛 血虚 隐痛",
+      "fields": {
+        "category": "专科", "treatment": "补血益气，缓急止痛",
+        "definition": "产后血虚，胞脉失养",
+        "typical": "产后腹痛、隐痛、面色苍白",
+        "minScore": 10,
+        "preferTags": ["补血", "补气", "止痛"],
+        "secondaryTags": ["温经", "缓急"],
+        "scoringRules": [
+          { "symptom": "S:产后腹痛", "score": 12, "required": true },
+          { "symptom": "S:隐痛", "score": 10 },
+          { "symptom": "S:面色苍白", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:产后腹痛-血瘀", "name": "产后腹痛·血瘀证", "icon": "🔥", "searchText": "产后腹痛 血瘀 刺痛",
+      "fields": {
+        "category": "专科", "treatment": "活血化瘀，温经止痛",
+        "definition": "瘀血内停，阻滞胞脉",
+        "typical": "产后腹痛、刺痛、恶露不绝",
+        "minScore": 10,
+        "preferTags": ["活血", "化瘀", "止痛"],
+        "secondaryTags": ["温经", "调经"],
+        "scoringRules": [
+          { "symptom": "S:产后腹痛", "score": 12, "required": true },
+          { "symptom": "S:刺痛", "score": 10 },
+          { "symptom": "S:恶露不绝", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:月经不调-肝郁气滞", "name": "月经不调·肝郁气滞证", "icon": "🔥", "searchText": "月经不调 肝郁 胀痛",
+      "fields": {
+        "category": "专科", "treatment": "疏肝理气，活血调经",
+        "definition": "肝气郁结，气血失调",
+        "typical": "月经先后无定期、经色紫红、情绪抑郁",
+        "minScore": 10,
+        "preferTags": ["疏肝", "理气", "调经"],
+        "secondaryTags": ["活血", "解郁"],
+        "scoringRules": [
+          { "symptom": "S:月经先后无定期", "score": 12, "required": true },
+          { "symptom": "S:经色紫红", "score": 10 },
+          { "symptom": "S:情绪抑郁", "score": 8 },
+          { "symptom": "S:月经先期", "score": 8 },
+          { "symptom": "S:月经后期", "score": 8 },
+          { "symptom": "S:痛经", "score": 8 },
+          { "symptom": "S:月经量少", "score": 6 },
+          { "symptom": "S:月经色暗有块", "score": 6 },
+          { "symptom": "S:经色淡红", "score": 6 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:艾灸" }
+      ]
+    },
+    {
+      "id": "T:闭经-气血虚弱", "name": "闭经·气血虚弱证", "icon": "🔥", "searchText": "闭经 气血虚 头晕",
+      "fields": {
+        "category": "专科", "treatment": "补气养血调经",
+        "definition": "气血亏虚，冲任失养",
+        "typical": "闭经、头晕、面色苍白",
+        "minScore": 10,
+        "preferTags": ["补气", "补血", "调经"],
+        "secondaryTags": ["健脾", "养心"],
+        "scoringRules": [
+          { "symptom": "S:头晕", "score": 12, "required": true },
+          { "symptom": "S:面色苍白", "score": 10 },
+          { "symptom": "S:神疲乏力", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:艾灸" },
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:带下过多-湿热下注", "name": "带下过多·湿热下注证", "icon": "🔥", "searchText": "带下 湿热 带下黄稠",
+      "fields": {
+        "category": "专科", "treatment": "清利湿热，止带",
+        "definition": "湿热下注，损伤任带",
+        "typical": "带下黄稠、阴部瘙痒",
+        "minScore": 10,
+        "preferTags": ["清热", "利湿", "止带"],
+        "secondaryTags": ["解毒", "止痒"],
+        "scoringRules": [
+          { "symptom": "S:带下黄稠", "score": 12, "required": true },
+          { "symptom": "S:阴部瘙痒", "score": 10 },
+          { "symptom": "S:口苦", "score": 8 },
+          { "symptom": "S:带下量多", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:刮痧" }
+      ]
+    },
+    {
+      "id": "T:妊娠恶阻-脾胃虚弱", "name": "妊娠恶阻·脾胃虚弱证", "icon": "🔥", "searchText": "妊娠恶阻 孕吐 恶心呕吐",
+      "fields": {
+        "category": "专科", "treatment": "健脾和胃，降逆止呕",
+        "definition": "脾胃虚弱，冲气上逆",
+        "typical": "恶心呕吐、食欲不振、神疲乏力",
+        "minScore": 10,
+        "preferTags": ["健脾", "和胃", "止呕"],
+        "secondaryTags": ["补气", "降逆"],
+        "scoringRules": [
+          { "symptom": "S:恶心呕吐", "score": 12, "required": true },
+          { "symptom": "S:食欲不振", "score": 10 },
+          { "symptom": "S:神疲乏力", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" }
+      ]
+    },
+    {
+      "id": "T:产后缺乳-肝郁气滞", "name": "产后缺乳·肝郁气滞证", "icon": "🔥", "searchText": "缺乳 肝郁 乳房胀硬",
+      "fields": {
+        "category": "专科", "treatment": "疏肝解郁，通络下乳",
+        "definition": "肝气郁结，乳络不畅",
+        "typical": "乳汁不通、乳房胀硬、情绪抑郁",
+        "minScore": 10,
+        "preferTags": ["疏肝", "通乳", "解郁"],
+        "secondaryTags": ["理气", "散结"],
+        "scoringRules": [
+          { "symptom": "S:乳汁不通", "score": 12, "required": true },
+          { "symptom": "S:乳房胀硬", "score": 10 },
+          { "symptom": "S:情绪抑郁", "score": 8 }
+        ]
+      },
+      "relations": [
+        { "type": "recommends", "target": "M:耳穴" },
+        { "type": "recommends", "target": "M:中药熨烫" }
+      ]
+    }
   ]
 }
