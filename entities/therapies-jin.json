@@ -1,0 +1,707 @@
+{
+  "type": "therapyJin",
+  "version": "2.0.5",
+  "entities": [
+    {
+      "id": "M:鼻三针",
+      "name": "鼻三针",
+      "icon": "🪡",
+      "searchText": "鼻三针 鼻炎 迎香",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "宣通鼻窍",
+        "indications": "过敏性鼻炎、慢性鼻炎",
+        "operation": "迎香向鼻根方向斜刺0.3-0.5寸；上迎香向内上方斜刺0.3-0.5寸；印堂向下平刺0.5-0.8寸",
+        "contraindications": "鼻部皮肤破损禁",
+        "discussionPoints": ["靳三针流派代表组穴之一", "以局部近取为主，配合迎香、印堂"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:迎香" },
+        { "type": "uses", "target": "A:上迎香" },
+        { "type": "uses", "target": "A:印堂" }
+      ]
+    },
+    {
+      "id": "M:眼三针",
+      "name": "眼三针",
+      "icon": "🪡",
+      "searchText": "眼三针 视神经萎缩 睛明",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "滋补肝肾，明目通络",
+        "indications": "视神经萎缩、黄斑变性",
+        "operation": "睛明上2分、眶下缘正对瞳孔、眶上缘正对瞳孔。深刺达眼底，不提插不旋转不加电",
+        "contraindications": "眼部感染禁；出血倾向禁",
+        "discussionPoints": ["深刺技术难度高，需专业操作", "对眼底病有独特疗效"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:睛明" },
+        { "type": "uses", "target": "A:承泣" }
+      ]
+    },
+    {
+      "id": "M:耳三针",
+      "name": "耳三针",
+      "icon": "🪡",
+      "searchText": "耳三针 耳聋 听宫",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通耳窍，益肾聪耳",
+        "indications": "耳聋、耳鸣",
+        "operation": "三穴均深刺1.2-1.5寸，得气后留针20-30分钟",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["听宫、听会、完骨构成耳三针", "疗程较长，需耐心坚持"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:听宫" },
+        { "type": "uses", "target": "A:听会" },
+        { "type": "uses", "target": "A:完骨" }
+      ]
+    },
+    {
+      "id": "M:舌三针",
+      "name": "舌三针",
+      "icon": "🪡",
+      "searchText": "舌三针 语言障碍 上廉泉",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通舌络，利咽喉",
+        "indications": "语言障碍、流涎",
+        "operation": "上廉泉及左右旁开0.8寸，向舌根方向斜刺0.8-1.2寸",
+        "contraindications": "颌下皮肤破损禁",
+        "discussionPoints": ["对中风失语、小儿流涎有效", "需注意针刺深度，避免误伤"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:上廉泉" },
+        { "type": "uses", "target": "A:廉泉左" },
+        { "type": "uses", "target": "A:廉泉右" }
+      ]
+    },
+    {
+      "id": "M:智三针",
+      "name": "智三针",
+      "icon": "🪡",
+      "searchText": "智三针 智力低下 神庭",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "醒脑开窍，益智安神",
+        "indications": "智力低下、痴呆",
+        "operation": "神庭、本神均平刺0.8-1寸",
+        "contraindications": "头部皮肤破损禁",
+        "discussionPoints": ["对小儿脑瘫、智力发育迟缓有效", "需长期治疗"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:神庭" },
+        { "type": "uses", "target": "A:本神" }
+      ]
+    },
+    {
+      "id": "M:四神针",
+      "name": "四神针",
+      "icon": "🪡",
+      "searchText": "四神针 百会 失眠",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "调神醒脑，平衡阴阳",
+        "indications": "失眠、头痛、头晕",
+        "operation": "百会前后左右各1.5寸，针尖向外方斜刺0.8-1寸",
+        "contraindications": "头部皮肤破损禁",
+        "discussionPoints": ["与四神聪不同，位置更外移", "对神志病、眩晕有良效"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:百会" }
+      ]
+    },
+    {
+      "id": "M:颞三针",
+      "name": "颞三针",
+      "icon": "🪡",
+      "searchText": "颞三针 中风偏瘫 颞1",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏通颞部经络",
+        "indications": "脑血管意外后遗症、帕金森",
+        "operation": "颞Ⅰ针耳尖直上发际2寸，颞Ⅱ、颞Ⅲ在其前后各旁开1寸，沿皮下平刺1.2-1.5寸",
+        "contraindications": "颞部皮肤破损禁",
+        "discussionPoints": ["对中风偏瘫有独特疗效", "常与脑三针配合使用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:颞1" },
+        { "type": "uses", "target": "A:颞2" },
+        { "type": "uses", "target": "A:颞3" }
+      ]
+    },
+    {
+      "id": "M:脑三针",
+      "name": "脑三针",
+      "icon": "🪡",
+      "searchText": "脑三针 脑户 平衡障碍",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通脑络，调平衡",
+        "indications": "肢体活动障碍、小脑病变",
+        "operation": "脑户、脑空均针尖向下沿皮刺0.8-1寸",
+        "contraindications": "枕部皮肤破损禁",
+        "discussionPoints": ["对平衡障碍、共济失调有效", "常与颞三针配合"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:脑户" },
+        { "type": "uses", "target": "A:脑空" }
+      ]
+    },
+    {
+      "id": "M:定神针",
+      "name": "定神针",
+      "icon": "🪡",
+      "searchText": "定神针 印堂 阳白 斜视",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "安神定志，清利头目",
+        "indications": "注意力不集中、斜视、眩晕",
+        "operation": "印堂上0.5寸、左右阳白上0.5寸，沿皮下向下直刺0.5-0.8寸",
+        "contraindications": "前额皮肤破损禁",
+        "discussionPoints": ["对小儿多动症、斜视有效", "进针需平刺，避免伤及额骨"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:定神1" },
+        { "type": "uses", "target": "A:定神2" },
+        { "type": "uses", "target": "A:定神3" }
+      ]
+    },
+    {
+      "id": "M:手三针",
+      "name": "手三针",
+      "icon": "🪡",
+      "searchText": "手三针 上肢瘫痪 合谷",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏通上肢经络",
+        "indications": "上肢瘫痪、肩臂疼痛",
+        "operation": "合谷直刺0.5-0.8寸；曲池直刺1-1.5寸；外关直刺0.5-0.8寸",
+        "contraindications": "上肢皮肤破损禁",
+        "discussionPoints": ["上肢痿证、中风偏瘫常用", "合谷孕妇慎用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:合谷" },
+        { "type": "uses", "target": "A:曲池" },
+        { "type": "uses", "target": "A:外关" }
+      ]
+    },
+    {
+      "id": "M:足三针",
+      "name": "足三针",
+      "icon": "🪡",
+      "searchText": "足三针 下肢瘫痪 足三里",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏通下肢经络",
+        "indications": "下肢瘫痪、腰膝酸软",
+        "operation": "足三里直刺1-1.5寸；三阴交直刺1-1.5寸；太冲直刺0.5-0.8寸",
+        "contraindications": "下肢皮肤破损禁；孕妇禁三阴交",
+        "discussionPoints": ["下肢痿证常用", "三阴交孕妇禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:足三里" },
+        { "type": "uses", "target": "A:三阴交" },
+        { "type": "uses", "target": "A:太冲" }
+      ]
+    },
+    {
+      "id": "M:手智针",
+      "name": "手智针",
+      "icon": "🪡",
+      "searchText": "手智针 内关 神门 多动症",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "清心安神",
+        "indications": "弱智、多动症、失眠",
+        "operation": "三穴均直刺0.5-0.8寸",
+        "contraindications": "腕掌部皮肤破损禁",
+        "discussionPoints": ["对手部精细动作障碍、多动有效", "配合智三针效果更佳"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:内关" },
+        { "type": "uses", "target": "A:神门" },
+        { "type": "uses", "target": "A:劳宫" }
+      ]
+    },
+    {
+      "id": "M:足智针",
+      "name": "足智针",
+      "icon": "🪡",
+      "searchText": "足智针 涌泉 弱智",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "补肾益智",
+        "indications": "弱智、小儿脑瘫",
+        "operation": "涌泉直刺0.5-0.8寸；泉中、泉中内均直刺0.5-0.8寸",
+        "contraindications": "足底皮肤破损禁",
+        "discussionPoints": ["对小儿脑发育迟缓有效", "常与手智针配合"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:涌泉" },
+        { "type": "uses", "target": "A:泉中" },
+        { "type": "uses", "target": "A:泉中内" }
+      ]
+    },
+    {
+      "id": "M:肩三针",
+      "name": "肩三针",
+      "icon": "🪡",
+      "searchText": "肩三针 肩周炎 肩髃",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏经通络，滑利肩节",
+        "indications": "肩周炎、肩关节疼痛",
+        "operation": "肩髃直刺1-1.5寸；肩前、肩后直刺1-1.5寸",
+        "contraindications": "肩部皮肤破损禁",
+        "discussionPoints": ["肩周炎经典组穴", "配合功能锻炼效果更佳"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:肩髃" },
+        { "type": "uses", "target": "A:肩前" },
+        { "type": "uses", "target": "A:肩后" }
+      ]
+    },
+    {
+      "id": "M:颈三针",
+      "name": "颈三针",
+      "icon": "🪡",
+      "searchText": "颈三针 颈椎病 天柱",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "舒筋活络，通利颈项",
+        "indications": "颈椎病、颈项强痛",
+        "operation": "天柱直刺0.5-0.8寸；百劳直刺0.5-1寸；大杼斜刺0.5-0.8寸",
+        "contraindications": "颈部皮肤破损禁",
+        "discussionPoints": ["颈椎病常用组穴", "配合拔罐可增强疗效"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:天柱" },
+        { "type": "uses", "target": "A:百劳" },
+        { "type": "uses", "target": "A:大杼" }
+      ]
+    },
+    {
+      "id": "M:背三针",
+      "name": "背三针",
+      "icon": "🪡",
+      "searchText": "背三针 感冒咳嗽 风门",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "宣肺解表",
+        "indications": "感冒、咳嗽、哮喘",
+        "operation": "三穴均斜刺0.5-0.8寸，不可深刺",
+        "contraindications": "背部皮肤破损禁",
+        "discussionPoints": ["对呼吸系统疾病有效", "不可深刺，防气胸"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:风门" },
+        { "type": "uses", "target": "A:肺俞" },
+        { "type": "uses", "target": "A:大杼" }
+      ]
+    },
+    {
+      "id": "M:腰三针",
+      "name": "腰三针",
+      "icon": "🪡",
+      "searchText": "腰三针 腰痛 肾俞",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "补肾强腰，通络止痛",
+        "indications": "腰痛、腰椎间盘突出",
+        "operation": "肾俞、大肠俞、委中均直刺1-1.5寸",
+        "contraindications": "腰部皮肤破损禁；孕妇禁腰骶部",
+        "discussionPoints": ["腰痛常用组穴", "孕妇禁腰骶部"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:肾俞" },
+        { "type": "uses", "target": "A:大肠俞" },
+        { "type": "uses", "target": "A:委中" }
+      ]
+    },
+    {
+      "id": "M:胃三针",
+      "name": "胃三针",
+      "icon": "🪡",
+      "searchText": "胃三针 胃痛 中脘",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "和胃降逆",
+        "indications": "胃脘痛、胃炎",
+        "operation": "中脘直刺1-1.5寸；内关直刺0.5-0.8寸；足三里直刺1-1.5寸",
+        "contraindications": "饱食后禁针中脘",
+        "discussionPoints": ["对慢性胃炎、消化不良有效", "中脘需注意进针深度"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:中脘" },
+        { "type": "uses", "target": "A:内关" },
+        { "type": "uses", "target": "A:足三里" }
+      ]
+    },
+    {
+      "id": "M:肠三针",
+      "name": "肠三针",
+      "icon": "🪡",
+      "searchText": "肠三针 腹痛 天枢",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "调理肠腑",
+        "indications": "腹痛、肠炎、便秘",
+        "operation": "天枢、关元、上巨虚均直刺1-1.5寸",
+        "contraindications": "孕妇禁；腹部皮肤破损禁",
+        "discussionPoints": ["便秘、腹泻双向调节", "孕妇禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:天枢" },
+        { "type": "uses", "target": "A:关元" },
+        { "type": "uses", "target": "A:上巨虚" }
+      ]
+    },
+    {
+      "id": "M:尿三针",
+      "name": "尿三针",
+      "icon": "🪡",
+      "searchText": "尿三针 尿频 关元",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "温肾固脬",
+        "indications": "尿频、尿失禁、前列腺增生",
+        "operation": "关元、中极直刺0.8-1.2寸；三阴交直刺1-1.5寸",
+        "contraindications": "孕妇禁；下腹部皮肤破损禁",
+        "discussionPoints": ["对尿频、遗尿有良效", "孕妇禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:关元" },
+        { "type": "uses", "target": "A:中极" },
+        { "type": "uses", "target": "A:三阴交" }
+      ]
+    },
+    {
+      "id": "M:脂三针",
+      "name": "脂三针",
+      "icon": "🪡",
+      "searchText": "脂三针 高血脂 内关",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "健脾化痰，活血降脂",
+        "indications": "高胆固醇、高血脂",
+        "operation": "内关、足三里、三阴交均直刺1-1.5寸",
+        "contraindications": "孕妇禁三阴交",
+        "discussionPoints": ["需配合饮食运动", "孕妇禁三阴交"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:内关" },
+        { "type": "uses", "target": "A:足三里" },
+        { "type": "uses", "target": "A:三阴交" }
+      ]
+    },
+    {
+      "id": "M:肥三针",
+      "name": "肥三针",
+      "icon": "🪡",
+      "searchText": "肥三针 肥胖 中脘",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "健脾化湿，消脂减肥",
+        "indications": "单纯性肥胖",
+        "operation": "中脘、带脉、足三里均直刺1-1.5寸",
+        "contraindications": "孕妇禁",
+        "discussionPoints": ["配合饮食运动效果更好", "孕妇禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:中脘" },
+        { "type": "uses", "target": "A:带脉" },
+        { "type": "uses", "target": "A:足三里" }
+      ]
+    },
+    {
+      "id": "M:突三针",
+      "name": "突三针",
+      "icon": "🪡",
+      "searchText": "突三针 甲状腺 水突",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "理气散结",
+        "indications": "甲状腺肿大、咽喉肿痛",
+        "operation": "水突、扶突直刺0.5-0.8寸；天突沿胸骨后缘向下平刺0.5-1寸",
+        "contraindications": "颈部血管损伤禁",
+        "discussionPoints": ["甲状腺疾病辅助治疗", "注意避开颈动脉"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:水突" },
+        { "type": "uses", "target": "A:扶突" },
+        { "type": "uses", "target": "A:天突" }
+      ]
+    },
+    {
+      "id": "M:乳三针",
+      "name": "乳三针",
+      "icon": "🪡",
+      "searchText": "乳三针 乳腺增生 乳根",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏肝理气，通乳散结",
+        "indications": "乳腺增生、乳汁不通",
+        "operation": "乳根斜刺0.5-0.8寸；膻中平刺0.3-0.5寸；肩井直刺0.5-0.8寸",
+        "contraindications": "孕妇禁；乳腺恶性肿瘤禁",
+        "discussionPoints": ["乳腺增生常用", "孕妇及恶性肿瘤禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:乳根" },
+        { "type": "uses", "target": "A:膻中" },
+        { "type": "uses", "target": "A:肩井" }
+      ]
+    },
+    {
+      "id": "M:闭三针",
+      "name": "闭三针",
+      "icon": "🪡",
+      "searchText": "闭三针 昏迷 十宣",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "开窍醒神",
+        "indications": "昏迷、休克、中暑",
+        "operation": "十宣点刺放血；涌泉直刺0.5-0.8寸；人中向上斜刺0.3-0.5寸",
+        "contraindications": "出血倾向禁十宣放血",
+        "discussionPoints": ["急救组穴", "出血倾向禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:十宣" },
+        { "type": "uses", "target": "A:涌泉" },
+        { "type": "uses", "target": "A:人中" }
+      ]
+    },
+    {
+      "id": "M:脱三针",
+      "name": "脱三针",
+      "icon": "🪡",
+      "searchText": "脱三针 脱证 百会",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "回阳固脱",
+        "indications": "脱证、虚脱、休克",
+        "operation": "百会平刺0.5-0.8寸；神阙隔盐灸；人中向上斜刺0.3-0.5寸",
+        "contraindications": "实证高热禁；神阙禁针刺",
+        "discussionPoints": ["脱证急救用", "神阙只灸不针"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:百会" },
+        { "type": "uses", "target": "A:神阙" },
+        { "type": "uses", "target": "A:人中" }
+      ]
+    },
+    {
+      "id": "M:面瘫针",
+      "name": "面瘫针",
+      "icon": "🪡",
+      "searchText": "面瘫针 口眼歪斜 阳白",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "祛风通络",
+        "indications": "面瘫、口眼歪斜",
+        "operation": "阳白、太阳、四白、翳风、合谷、地仓透颊车",
+        "contraindications": "面部感染禁",
+        "discussionPoints": ["面瘫常用组穴", "地仓透颊车是特色"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:阳白" },
+        { "type": "uses", "target": "A:太阳" },
+        { "type": "uses", "target": "A:四白" },
+        { "type": "uses", "target": "A:翳风" },
+        { "type": "uses", "target": "A:合谷" },
+        { "type": "uses", "target": "A:地仓" },
+        { "type": "uses", "target": "A:颊车" }
+      ]
+    },
+    {
+      "id": "M:褐三针",
+      "name": "褐三针",
+      "icon": "🪡",
+      "searchText": "褐三针 黄褐斑 颧髎",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "活血化瘀，消斑美容",
+        "indications": "黄褐斑、面部色素沉着",
+        "operation": "颧髎、下关、太阳均直刺0.5-1寸",
+        "contraindications": "面部皮肤破损禁",
+        "discussionPoints": ["美容针灸常用", "需配合防晒"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:颧髎" },
+        { "type": "uses", "target": "A:下关" },
+        { "type": "uses", "target": "A:太阳" }
+      ]
+    },
+    {
+      "id": "M:叉三针",
+      "name": "叉三针",
+      "icon": "🪡",
+      "searchText": "叉三针 三叉神经痛 太阳",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通络止痛",
+        "indications": "三叉神经痛",
+        "operation": "太阳、下关、阿是穴均直刺0.5-1寸",
+        "contraindications": "面部感染禁",
+        "discussionPoints": ["三叉神经痛常用", "可配合放血"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:太阳" },
+        { "type": "uses", "target": "A:下关" }
+      ]
+    },
+    {
+      "id": "M:膝三针",
+      "name": "膝三针",
+      "icon": "🪡",
+      "searchText": "膝三针 膝关节炎 膝眼",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通利关节",
+        "indications": "膝关节炎、膝关节痛",
+        "operation": "膝眼向膝中斜刺0.5-1寸；梁丘、血海直刺1-1.5寸",
+        "contraindications": "膝关节感染禁",
+        "discussionPoints": ["膝关节炎常用", "配合热敷效果更佳"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:膝眼" },
+        { "type": "uses", "target": "A:梁丘" },
+        { "type": "uses", "target": "A:血海" }
+      ]
+    },
+    {
+      "id": "M:踝三针",
+      "name": "踝三针",
+      "icon": "🪡",
+      "searchText": "踝三针 踝关节痛 解溪",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "通利踝节",
+        "indications": "踝关节痛、足下垂",
+        "operation": "解溪、太溪、昆仑均直刺0.5-0.8寸",
+        "contraindications": "踝部骨折未固定禁",
+        "discussionPoints": ["踝关节扭伤恢复期用", "骨折未固定禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:解溪" },
+        { "type": "uses", "target": "A:太溪" },
+        { "type": "uses", "target": "A:昆仑" }
+      ]
+    },
+    {
+      "id": "M:痿三针",
+      "name": "痿三针",
+      "icon": "🪡",
+      "searchText": "痿三针 肌肉萎缩 曲池",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "健脾益气，强筋壮骨",
+        "indications": "痿证、肌肉萎缩",
+        "operation": "上肢：曲池、合谷、尺泽；下肢：足三里、三阴交、太溪",
+        "contraindications": "肌肉萎缩晚期慎用强刺激",
+        "discussionPoints": ["上下肢分取", "需长期治疗"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:曲池" },
+        { "type": "uses", "target": "A:合谷" },
+        { "type": "uses", "target": "A:尺泽" },
+        { "type": "uses", "target": "A:足三里" },
+        { "type": "uses", "target": "A:三阴交" },
+        { "type": "uses", "target": "A:太溪" }
+      ]
+    },
+    {
+      "id": "M:坐骨针",
+      "name": "坐骨针",
+      "icon": "🪡",
+      "searchText": "坐骨针 坐骨神经痛 环跳",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "疏通经络，活血止痛",
+        "indications": "坐骨神经痛、腰腿痛",
+        "operation": "环跳直刺2-3寸；委中直刺1-1.5寸；昆仑直刺0.5-0.8寸",
+        "contraindications": "孕妇禁",
+        "discussionPoints": ["坐骨神经痛常用", "环跳深刺需注意"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:环跳" },
+        { "type": "uses", "target": "A:委中" },
+        { "type": "uses", "target": "A:昆仑" }
+      ]
+    },
+    {
+      "id": "M:手挛三针",
+      "name": "手挛三针",
+      "icon": "🪡",
+      "searchText": "手挛三针 中风手痉挛 曲池",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "舒筋缓挛",
+        "indications": "中风后手部痉挛",
+        "operation": "曲池、外关、合谷均直刺0.5-1.5寸",
+        "contraindications": "痉挛严重时不宜强刺激",
+        "discussionPoints": ["中风康复期用", "不宜强刺激"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:曲池" },
+        { "type": "uses", "target": "A:外关" },
+        { "type": "uses", "target": "A:合谷" }
+      ]
+    },
+    {
+      "id": "M:足挛三针",
+      "name": "足挛三针",
+      "icon": "🪡",
+      "searchText": "足挛三针 中风足痉挛 阳陵泉",
+      "fields": {
+        "isReference": true,
+        "school": "靳三针",
+        "principle": "柔肝缓急",
+        "indications": "中风后足部痉挛",
+        "operation": "阳陵泉、三阴交、太冲均直刺0.5-1.5寸",
+        "contraindications": "孕妇禁三阴交",
+        "discussionPoints": ["中风康复期用", "孕妇禁用"]
+      },
+      "relations": [
+        { "type": "uses", "target": "A:阳陵泉" },
+        { "type": "uses", "target": "A:三阴交" },
+        { "type": "uses", "target": "A:太冲" }
+      ]
+    }
+  ]
+}

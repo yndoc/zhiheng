@@ -1,0 +1,534 @@
+{
+  "type": "therapyBalance",
+  "version": "2.0.5",
+  "entities": [
+    {
+      "id": "M:平衡-升提穴",
+      "name": "平衡针·升提穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 升提穴 内脏下垂",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "升提阳气",
+        "indications": "胃下垂、子宫脱垂、脱肛",
+        "operation": "沿皮下骨膜外向前平刺1.5-2寸",
+        "contraindications": "头部皮肤破损禁",
+        "discussionPoints": ["王文远教授创立", "远端取穴特色"]
+      },
+      "relations": [{ "type": "uses", "target": "A:升提穴" }]
+    },
+    {
+      "id": "M:平衡-腰痛穴",
+      "name": "平衡针·腰痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 腰痛穴 急性腰扭伤",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "通络止痛",
+        "indications": "急性腰扭伤、腰椎间盘突出",
+        "operation": "向下平刺1-1.5寸",
+        "contraindications": "前额皮肤破损禁",
+        "discussionPoints": ["平衡针代表穴位", "3秒见效"]
+      },
+      "relations": [{ "type": "uses", "target": "A:腰痛穴" }]
+    },
+    {
+      "id": "M:平衡-胃痛穴",
+      "name": "平衡针·胃痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 胃痛穴 胃炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "和胃止痛",
+        "indications": "急慢性胃炎、胃痉挛",
+        "operation": "向下斜刺0.5-1寸",
+        "contraindications": "面部皮肤破损禁",
+        "discussionPoints": ["远端取穴", "快速止痛"]
+      },
+      "relations": [{ "type": "uses", "target": "A:胃痛穴" }]
+    },
+    {
+      "id": "M:平衡-胸痛穴",
+      "name": "平衡针·胸痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 胸痛穴 心绞痛",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "宽胸理气",
+        "indications": "心绞痛、胸胁痛",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "前臂皮肤破损禁",
+        "discussionPoints": ["心绞痛辅助", "需结合内科治疗"]
+      },
+      "relations": [{ "type": "uses", "target": "A:胸痛穴" }]
+    },
+    {
+      "id": "M:平衡-腹痛穴",
+      "name": "平衡针·腹痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 腹痛穴 肠痉挛",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "理气止痛",
+        "indications": "肠痉挛、胆绞痛",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "下肢皮肤破损禁",
+        "discussionPoints": ["急性腹痛辅助", "需除外急腹症"]
+      },
+      "relations": [{ "type": "uses", "target": "A:腹痛穴" }]
+    },
+    {
+      "id": "M:平衡-降压穴",
+      "name": "平衡针·降压穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 降压穴 高血压",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "平肝潜阳",
+        "indications": "高血压",
+        "operation": "沿皮下平刺1-1.5寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["高血压辅助", "不可替代降压药"]
+      },
+      "relations": [{ "type": "uses", "target": "A:降压穴" }]
+    },
+    {
+      "id": "M:平衡-降脂穴",
+      "name": "平衡针·降脂穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 降脂穴 高血脂",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "化痰降脂",
+        "indications": "高血脂、肥胖",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "前臂皮肤破损禁",
+        "discussionPoints": ["需配合饮食运动"]
+      },
+      "relations": [{ "type": "uses", "target": "A:降脂穴" }]
+    },
+    {
+      "id": "M:平衡-醒脑穴",
+      "name": "平衡针·醒脑穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 醒脑穴 昏迷",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "醒脑开窍",
+        "indications": "昏迷、癫痫、癔症",
+        "operation": "向下沿皮下平刺1-1.5寸",
+        "contraindications": "后枕部皮肤破损禁",
+        "discussionPoints": ["急救组穴", "需结合西医急救"]
+      },
+      "relations": [{ "type": "uses", "target": "A:醒脑穴" }]
+    },
+    {
+      "id": "M:平衡-明目穴",
+      "name": "平衡针·明目穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 明目穴 视疲劳",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "明目通络",
+        "indications": "视疲劳、青光眼",
+        "operation": "直刺0.5-0.8寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["眼病辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:明目穴" }]
+    },
+    {
+      "id": "M:平衡-耳聋穴",
+      "name": "平衡针·耳聋穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 耳聋穴 耳鸣",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "通耳窍",
+        "indications": "耳鸣、耳聋",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["耳病辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:耳聋穴" }]
+    },
+    {
+      "id": "M:平衡-鼻炎穴",
+      "name": "平衡针·鼻炎穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 鼻炎穴 过敏性鼻炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "宣通鼻窍",
+        "indications": "过敏性鼻炎",
+        "operation": "向内上方斜刺0.5-1寸",
+        "contraindications": "鼻部皮肤破损禁",
+        "discussionPoints": ["过敏性鼻炎常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:鼻炎穴" }]
+    },
+    {
+      "id": "M:平衡-咽痛穴",
+      "name": "平衡针·咽痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 咽痛穴 咽炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "利咽消肿",
+        "indications": "急慢性咽炎、扁桃体炎",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "手背皮肤破损禁",
+        "discussionPoints": ["咽痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:咽痛穴" }]
+    },
+    {
+      "id": "M:平衡-颈痛穴",
+      "name": "平衡针·颈痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 颈痛穴 颈椎病",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "舒筋活络",
+        "indications": "颈椎病、落枕",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "手背皮肤破损禁",
+        "discussionPoints": ["颈椎病辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:颈痛穴" }]
+    },
+    {
+      "id": "M:平衡-肩痛穴",
+      "name": "平衡针·肩痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 肩痛穴 肩周炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "通络止痛",
+        "indications": "肩周炎、肩袖损伤",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "下肢皮肤破损禁",
+        "discussionPoints": ["肩痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:肩痛穴" }]
+    },
+    {
+      "id": "M:平衡-肘痛穴",
+      "name": "平衡针·肘痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 肘痛穴 网球肘",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "通利关节",
+        "indications": "网球肘、肘关节炎",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "膝部皮肤破损禁",
+        "discussionPoints": ["网球肘常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:肘痛穴" }]
+    },
+    {
+      "id": "M:平衡-腕痛穴",
+      "name": "平衡针·腕痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 腕痛穴 腕关节痛",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "舒筋止痛",
+        "indications": "腕关节痛、腱鞘炎",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "足背皮肤破损禁",
+        "discussionPoints": ["腕痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:腕痛穴" }]
+    },
+    {
+      "id": "M:平衡-膝痛穴",
+      "name": "平衡针·膝痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 膝痛穴 膝关节炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "通利关节",
+        "indications": "膝关节炎、膝关节痛",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "肘部皮肤破损禁",
+        "discussionPoints": ["膝痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:膝痛穴" }]
+    },
+    {
+      "id": "M:平衡-踝痛穴",
+      "name": "平衡针·踝痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 踝痛穴 踝关节扭伤",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "舒筋活络",
+        "indications": "踝关节扭伤、踝关节炎",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "腕部皮肤破损禁",
+        "discussionPoints": ["踝痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:踝痛穴" }]
+    },
+    {
+      "id": "M:平衡-头痛穴",
+      "name": "平衡针·头痛穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 头痛穴 偏头痛",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "平肝潜阳，通络止痛",
+        "indications": "偏头痛、紧张性头痛",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "足背皮肤破损禁",
+        "discussionPoints": ["头痛常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:头痛穴" }]
+    },
+    {
+      "id": "M:平衡-偏瘫穴",
+      "name": "平衡针·偏瘫穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 偏瘫穴 中风",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "醒脑开窍，通经活络",
+        "indications": "中风偏瘫",
+        "operation": "沿皮下平刺1-1.5寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["中风康复常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:偏瘫穴" }]
+    },
+    {
+      "id": "M:平衡-面瘫穴",
+      "name": "平衡针·面瘫穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 面瘫穴 面神经麻痹",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "祛风通络",
+        "indications": "面神经麻痹",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "面部皮肤破损禁",
+        "discussionPoints": ["面瘫常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:面瘫穴" }]
+    },
+    {
+      "id": "M:平衡-妇科穴",
+      "name": "平衡针·妇科穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 妇科穴 痛经",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "调经止痛",
+        "indications": "痛经、月经不调",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "孕妇禁",
+        "discussionPoints": ["妇科病常用", "孕妇禁用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:妇科穴" }]
+    },
+    {
+      "id": "M:平衡-痛经穴",
+      "name": "平衡针·痛经穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 痛经穴 痛经",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "温经散寒",
+        "indications": "痛经",
+        "operation": "直刺1-1.5寸",
+        "contraindications": "孕妇禁",
+        "discussionPoints": ["痛经专用", "孕妇禁用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:痛经穴" }]
+    },
+    {
+      "id": "M:平衡-感冒穴",
+      "name": "平衡针·感冒穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 感冒穴 感冒",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "解表散寒",
+        "indications": "感冒、发热",
+        "operation": "向下平刺1-1.5寸",
+        "contraindications": "前额皮肤破损禁",
+        "discussionPoints": ["感冒早期用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:感冒穴" }]
+    },
+    {
+      "id": "M:平衡-退热穴",
+      "name": "平衡针·退热穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 退热穴 发热",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "清热解表",
+        "indications": "发热",
+        "operation": "沿皮下平刺1-1.5寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["发热辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:退热穴" }]
+    },
+    {
+      "id": "M:平衡-急救穴",
+      "name": "平衡针·急救穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 急救穴 休克",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "回阳救逆",
+        "indications": "休克、昏迷",
+        "operation": "向上斜刺0.3-0.5寸",
+        "contraindications": "面部皮肤破损禁",
+        "discussionPoints": ["急救用", "需结合西医急救"]
+      },
+      "relations": [{ "type": "uses", "target": "A:急救穴" }]
+    },
+    {
+      "id": "M:平衡-癫痫穴",
+      "name": "平衡针·癫痫穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 癫痫穴 癫痫",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "熄风定痫",
+        "indications": "癫痫",
+        "operation": "向下平刺1-1.5寸",
+        "contraindications": "后枕部皮肤破损禁",
+        "discussionPoints": ["癫痫辅助", "需结合抗癫痫药"]
+      },
+      "relations": [{ "type": "uses", "target": "A:癫痫穴" }]
+    },
+    {
+      "id": "M:平衡-哮喘穴",
+      "name": "平衡针·哮喘穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 哮喘穴 哮喘",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "宣肺平喘",
+        "indications": "支气管哮喘",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "前臂皮肤破损禁",
+        "discussionPoints": ["哮喘辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:哮喘穴" }]
+    },
+    {
+      "id": "M:平衡-过敏穴",
+      "name": "平衡针·过敏穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 过敏穴 过敏",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "抗过敏",
+        "indications": "过敏性鼻炎、荨麻疹",
+        "operation": "沿皮下平刺1-1.5寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["过敏性疾病辅助"]
+      },
+      "relations": [{ "type": "uses", "target": "A:过敏穴" }]
+    },
+    {
+      "id": "M:平衡-失眠穴",
+      "name": "平衡针·失眠穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 失眠穴 失眠",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "安神定志",
+        "indications": "失眠、焦虑",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "腕部皮肤破损禁",
+        "discussionPoints": ["失眠常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:失眠穴" }]
+    },
+    {
+      "id": "M:平衡-抑郁穴",
+      "name": "平衡针·抑郁穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 抑郁穴 抑郁症",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "疏肝解郁",
+        "indications": "抑郁症、焦虑症",
+        "operation": "向下平刺1-1.5寸",
+        "contraindications": "前额皮肤破损禁",
+        "discussionPoints": ["情绪病辅助", "需结合心理治疗"]
+      },
+      "relations": [{ "type": "uses", "target": "A:抑郁穴" }]
+    },
+    {
+      "id": "M:平衡-精神穴",
+      "name": "平衡针·精神穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 精神穴 精神分裂",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "醒脑安神",
+        "indications": "精神分裂症、癔症",
+        "operation": "沿皮下平刺1-1.5寸",
+        "contraindications": "头顶皮肤破损禁",
+        "discussionPoints": ["精神疾病辅助", "需结合精神科治疗"]
+      },
+      "relations": [{ "type": "uses", "target": "A:精神穴" }]
+    },
+    {
+      "id": "M:平衡-胃肠穴",
+      "name": "平衡针·胃肠穴",
+      "icon": "⚖️",
+      "searchText": "平衡针 胃肠穴 胃肠炎",
+      "fields": {
+        "isReference": true,
+        "school": "平衡针",
+        "principle": "调理胃肠",
+        "indications": "胃肠炎、消化不良",
+        "operation": "直刺0.5-1寸",
+        "contraindications": "耳周皮肤破损禁",
+        "discussionPoints": ["胃肠病常用"]
+      },
+      "relations": [{ "type": "uses", "target": "A:胃肠穴" }]
+    }
+  ]
+}
