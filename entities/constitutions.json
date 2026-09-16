@@ -1,0 +1,15 @@
+{
+  "type": "constitution",
+  "version": "2.0.4",
+  "entities": [
+    {"id":"C:平和质","name":"平和质","icon":"🌿","searchText":"平和质 健康 阴阳气血调和","fields":{"description":"阴阳气血调和，体态适中，面色红润，精力充沛","tendency":"平素患病较少，对外界环境适应能力较强","lifestyle":"饮食有节，劳逸结合，坚持锻炼","commonSyndromes":[]},"relations":[]},
+    {"id":"C:气虚质","name":"气虚质","icon":"🌱","searchText":"气虚质 气短 疲乏 易感冒","fields":{"description":"元气不足，疲乏、气短、自汗","tendency":"易患感冒、内脏下垂等病；病后康复缓慢","lifestyle":"益气健脾，宜食山药、大枣、黄芪；忌耗气","commonSyndromes":["T:气虚证","T:肺气虚证","T:脾气虚证"]},"relations":[{"type":"proneTo","target":"T:气虚证"},{"type":"proneTo","target":"T:肺气虚证"},{"type":"proneTo","target":"T:脾气虚证"}]},
+    {"id":"C:阳虚质","name":"阳虚质","icon":"🔥","searchText":"阳虚质 畏寒 手脚凉","fields":{"description":"阳气不足，畏寒怕冷、手足不温","tendency":"易患痰饮、肿胀、泄泻；易感寒邪","lifestyle":"温阳散寒，宜食生姜、羊肉、桂圆；忌生冷","commonSyndromes":["T:阳虚证","T:脾阳虚证","T:肾阳虚证"]},"relations":[{"type":"proneTo","target":"T:阳虚证"},{"type":"proneTo","target":"T:脾阳虚证"},{"type":"proneTo","target":"T:肾阳虚证"}]},
+    {"id":"C:阴虚质","name":"阴虚质","icon":"💧","searchText":"阴虚质 手脚心热 盗汗 口干","fields":{"description":"阴液亏少，口燥咽干、手足心热","tendency":"易患虚劳、失精、不寐；易感热邪","lifestyle":"滋阴润燥，宜食百合、银耳、枸杞；忌辛辣","commonSyndromes":["T:阴虚证","T:肺阴虚证","T:肾阴虚证","T:胃阴虚证"]},"relations":[{"type":"proneTo","target":"T:阴虚证"},{"type":"proneTo","target":"T:肺阴虚证"},{"type":"proneTo","target":"T:肾阴虚证"},{"type":"proneTo","target":"T:胃阴虚证"}]},
+    {"id":"C:痰湿质","name":"痰湿质","icon":"💦","searchText":"痰湿质 肥胖 困重 痰多","fields":{"description":"痰湿凝聚，形体肥胖、腹部松软、口黏苔腻","tendency":"易患消渴、中风、胸痹；易感湿邪","lifestyle":"化痰祛湿，宜食薏苡仁、茯苓、冬瓜；忌甜腻","commonSyndromes":["T:痰湿证","T:痰浊阻肺证"]},"relations":[{"type":"proneTo","target":"T:痰湿证"},{"type":"proneTo","target":"T:痰浊阻肺证"}]},
+    {"id":"C:湿热质","name":"湿热质","icon":"🌊","searchText":"湿热质 口苦 面垢 长痘","fields":{"description":"湿热内蕴，面垢油光、口苦口干、身重困倦","tendency":"易患疮疖、黄疸、热淋；易感湿热","lifestyle":"清热利湿，宜食绿豆、苦瓜、冬瓜；忌辛辣油腻","commonSyndromes":["T:脾胃湿热证","T:肝胆湿热证","T:膀胱湿热证"]},"relations":[{"type":"proneTo","target":"T:脾胃湿热证"},{"type":"proneTo","target":"T:肝胆湿热证"},{"type":"proneTo","target":"T:膀胱湿热证"}]},
+    {"id":"C:血瘀质","name":"血瘀质","icon":"🩸","searchText":"血瘀质 色暗 刺痛 瘀斑","fields":{"description":"血行不畅，肤色晦暗、舌质紫暗","tendency":"易患癥瘕、痛证、血证","lifestyle":"活血化瘀，宜食山楂、桃仁、玫瑰花；忌久坐","commonSyndromes":["T:血瘀证","T:心血瘀阻证","T:胸痹-心血瘀阻"]},"relations":[{"type":"proneTo","target":"T:血瘀证"},{"type":"proneTo","target":"T:心血瘀阻证"},{"type":"proneTo","target":"T:胸痹-心血瘀阻"}]},
+    {"id":"C:气郁质","name":"气郁质","icon":"😔","searchText":"气郁质 情绪抑郁 善太息","fields":{"description":"气机郁滞，神情抑郁、忧虑脆弱","tendency":"易患脏躁、梅核气、百合病；易感情志病","lifestyle":"疏肝解郁，宜食玫瑰花、陈皮、佛手；忌郁怒","commonSyndromes":["T:气滞证","T:肝气郁结证","T:肝郁脾虚证"]},"relations":[{"type":"proneTo","target":"T:气滞证"},{"type":"proneTo","target":"T:肝气郁结证"},{"type":"proneTo","target":"T:肝郁脾虚证"}]},
+    {"id":"C:特禀质","name":"特禀质","icon":"🌾","searchText":"特禀质 过敏 鼻炎 荨麻疹","fields":{"description":"先天失常，以生理缺陷、过敏反应等为主要特征","tendency":"易患哮喘、风团、咽痒、鼻塞等过敏性疾病","lifestyle":"益气固表，宜食黄芪、白术、防风；避免过敏原","commonSyndromes":["T:鼻鼽-肺气虚寒","T:湿疮-湿热浸淫","T:风寒束肺证"]},"relations":[{"type":"proneTo","target":"T:鼻鼽-肺气虚寒"},{"type":"proneTo","target":"T:湿疮-湿热浸淫"},{"type":"proneTo","target":"T:风寒束肺证"}]}
+  ]
+}
