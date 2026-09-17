@@ -1,11 +1,20 @@
 {
-  "baseUrl": "https://cdn.jsdelivr.net/gh/yndoc/zhiheng@main/entities/",
-  "generatedAt": "2025-01-15T08:30:00Z",
+  "version": "20260917-manual01",
+  "generatedAt": "2026-09-17T00:00:00.000Z",
+  "baseUrl": "https://testingcf.jsdelivr.net/gh/yndoc/zhiheng@main/entities/",
   "types": {
-    "syndrome":     { "version": "2.0.0", "file": "syndromes.json" },
-    "acupoint":     { "version": "2.0.0", "file": "acupoints.json" },
-    "therapy":      { "version": "2.0.0", "file": "therapies.json" },
-    "tongue":       { "version": "2.0.0", "file": "tongue.json" },
-    "pulse":        { "version": "2.0.0", "file": "pulse.json" }
+    "syndrome":       { "file": "syndromes.json",         "version": "2.0.4.0001", "count": 60,  "hash": "" },
+    "symptom":        { "file": "symptoms.json",          "version": "2.0.4.0001", "count": 137, "hash": "" },
+    "therapy":        { "file": "therapies.json",         "version": "2.0.5.0001", "count": 10,  "hash": "" },
+    "prescription":   { "file": "prescriptions.json",     "version": "2.0.4.0001", "count": 45,  "hash": "" },
+    "disease":        { "file": "diseases.json",          "version": "2.0.4.0001", "count": 35,  "hash": "" },
+    "tongue":         { "file": "tongue.json",            "version": "2.0.4.0001", "count": 24,  "hash": "" },
+    "pulse":          { "file": "pulse.json",             "version": "2.0.4.0001", "count": 28,  "hash": "" },
+    "earPoint":       { "file": "ear-points.json",        "version": "2.0.4.0001", "count": 103, "hash": "" },
+    "acupoint":       { "file": "acupoints.json",         "version": "2.0.4.0001", "count": 151, "hash": "" },
+    "constitution":   { "file": "constitutions.json",     "version": "2.0.4.0001", "count": 9,   "hash": "" },
+    "therapyJin":     { "file": "therapies-jin.json",     "version": "2.0.5.0001", "count": 35,  "hash": "" },
+    "therapyBalance": { "file": "therapies-balance.json", "version": "2.0.5.0001", "count": 33,  "hash": "" },
+    "therapyEarRef":  { "file": "therapies-earref.json",  "version": "2.0.5.0001", "count": 146, "hash": "" }
   }
 }
